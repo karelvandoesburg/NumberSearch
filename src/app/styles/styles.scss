@@ -8,7 +8,7 @@
 ul {
   list-style-type: none;
   padding:0;
-  margin-top:40px;
+  margin-top:45px;
 }
 
 #container {
@@ -44,11 +44,14 @@ ul {
 }
 
 .input {
+  font-family:Fira-Sans-light;
+  font-size:16px;
   position: absolute;
   right:0px;
   top:0px;
   width:470px;
   height:30px;
+  padding-left:10px;
 }
 
 #inputbutton {
