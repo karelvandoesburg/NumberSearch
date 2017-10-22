@@ -7,10 +7,8 @@
 
 ul {
   list-style-type: none;
-  position: absolute;
   padding: 0;
-  left: 0px;
-  top: 100px; }
+  margin-top: 50px; }
 
 #container {
   font-family: Fira-Sans;
@@ -20,14 +18,15 @@ ul {
   top: 50%;
   left: 50%;
   width: 700px;
-  height: 450px;
-  background-color: lightblue;
-  margin-top: -225px;
-  margin-left: -350px; }
+  height: 615px;
+  margin-top: -307.5px;
+  margin-left: -350px;
+  overflow: hidden; }
+  #container img {
+    margin-top: 50px; }
 
 .formunit {
   float: left;
-  background-color: green;
   width: 700px;
   height: 50px;
   position: relative; }
@@ -43,3 +42,12 @@ ul {
   top: 0px;
   width: 470px;
   height: 30px; }
+
+#inputbutton {
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 320px;
+  height: 30px;
+  color: white;
+  background-color: lightblue;
+  cursor: pointer; }

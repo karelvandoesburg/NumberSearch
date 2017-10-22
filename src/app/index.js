@@ -8,7 +8,7 @@ class Screen extends React.Component {
     constructor() {
         super();
         this.state = {
-            forms : ['Dossier id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer']
+            forms : ['File id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer']
         }
     }
 
@@ -23,6 +23,7 @@ class Screen extends React.Component {
             <div id='container'>
                 <img src={logo} />
                 <ul>{forms}</ul>
+                <InputButton />
             </div>
         );
     }
@@ -45,6 +46,14 @@ class Input extends React.Component {
   render() {
     return (
       <div><input type="text"  className="input" name={this.props.formname}/></div>
+    )
+  }
+}
+
+class InputButton extends React.Component {
+  render() {
+    return (
+      <div id='inputbutton'>Retrieve Information</div>
     )
   }
 }

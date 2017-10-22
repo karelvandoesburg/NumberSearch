@@ -7,10 +7,8 @@
 
 ul {
   list-style-type: none;
-  position: absolute;
   padding:0;
-  left:0px;
-  top:100px;
+  margin-top:50px;
 }
 
 #container {
@@ -22,14 +20,18 @@ ul {
   left:50%;
   width:$containerwidth;
   height:$containerheight;
-  background-color: lightblue;
+  // background-color: lightblue;
   margin-top:-($containerheight/2);
   margin-left: -($containerwidth/2);
+  overflow: hidden;
+  img {
+    margin-top:50px;
+  }
 }
 
 .formunit {
   float:left;
-  background-color:green;
+  // background-color:green;
   width:$containerwidth;
   height:$formunitheight;
   position: relative;
@@ -47,4 +49,14 @@ ul {
   top:0px;
   width:470px;
   height:30px;
+}
+
+#inputbutton {
+  padding-top:10px;
+  text-align: center;
+  margin-top:320px;
+  height:30px;
+  color:white;
+  background-color: lightblue;
+  cursor:pointer;
 }
