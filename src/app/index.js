@@ -8,37 +8,53 @@ class Screen extends React.Component {
     constructor() {
         super();
         this.state = {
-            forms : ['File id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer']
+            forms : ['File id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer'],
+            formobjects : []
         }
     }
 
     render() {
         var forms = this.state.forms;
-        forms = forms.map(function(formname, key){
+        var formobjects = this.state.formobjects;
+        forms = forms.map(function(item, key){
           var id = 'formid' + key;
+          var form = <Form formname={item} key={key} formid={id} />
+          formobjects.push(form);
           return(
-            <Form formname={formname} formid={id} key={key} />
+            form
           )
         })
         return(
             <div id='container'>
                 <img src={logo} />
-                <ul onChange={this.handle.bind(this)}>{forms}</ul>
-                <div id='inputbutton' onClick={this.retrieveData}>Retrieve Information</div>
+                <ul>{forms}</ul>
+                <div id='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
             </div>
         );
     }
 
     retrieveData() {
-      console.log(this.refs.formid1);
+      this.state.formobjects.map(function(item) {
+        console.log(item.props.formname);
+      })
+    }
+
+    changeInput() {
+
     }
 
     handle(event) {
-      console.log(event.target.value);
+      console.log(event.target.props.input);
     }
 }
 
 class Form extends React.Component {
+  constructor() {
+      super();
+      this.state = {
+
+      }
+  }
   render() {
     return(
       <div className='formunit-container'>
