@@ -20,18 +20,13 @@ ul {
   left:50%;
   width:$containerwidth;
   height:$containerheight;
-  // background-color: lightblue;
   margin-top:-($containerheight/2);
   margin-left: -($containerwidth/2);
   overflow: hidden;
-  // img {
-  //   margin-top:50px;
-  // }
 }
 
 .formunit {
   float:left;
-  // background-color:green;
   width:$containerwidth;
   height:$formunitheight;
   position: relative;
