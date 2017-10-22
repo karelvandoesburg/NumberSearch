@@ -31,9 +31,9 @@ class Screen extends React.Component {
 class Form extends React.Component {
   render() {
     return(
-      <div className='form'>
-        <li className="formname">
-          <div className='formname-container'>{this.props.formname}:</div>
+      <div className='formunit-container'>
+        <li className="formunit">
+          <div className='formtext-container'>{this.props.formname}:</div>
           <Input formname={this.props.formname}/>
         </li>
       </div>
@@ -44,7 +44,7 @@ class Form extends React.Component {
 class Input extends React.Component {
   render() {
     return (
-      <div className="input"><input type="text" name={this.props.formname}/></div>
+      <div><input type="text"  className="input" name={this.props.formname}/></div>
     )
   }
 }

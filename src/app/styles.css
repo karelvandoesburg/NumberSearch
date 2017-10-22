@@ -18,19 +18,18 @@ ul {
   margin-top: -225px;
   margin-left: -350px; }
 
-.form {
+.formunit-container {
   position: relative;
   width: 640px;
-  height: 22px;
-  background-color: red; }
-
-.formname {
-  float: left;
-  background-color: green;
-  width: 500px;
   height: 22px; }
 
-.formname-container {
+.formunit {
+  float: left;
+  background-color: green;
+  width: 640px;
+  height: 22px; }
+
+.formtext-container {
   float: left;
   top: 0px;
   left: 0px;
@@ -42,4 +41,4 @@ ul {
   position: absolute;
   right: 0px;
   top: 0px;
-  float: right; }
+  width: 400px; }

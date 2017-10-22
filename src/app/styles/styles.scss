@@ -23,21 +23,20 @@ ul {
   margin-left: -($containerwidth/2);
 }
 
-.form {
+.formunit-container {
   position: relative;
   width:($containerwidth+(-60));
   height:$formunitheight;
-  background-color: red;
 }
 
-.formname {
+.formunit {
   float:left;
   background-color:green;
-  width:500px;
+  width:($containerwidth+(-60));
   height:$formunitheight;
 }
 
-.formname-container {
+.formtext-container {
   float:left;
   top:0px;
   left:0px;
@@ -50,5 +49,5 @@ ul {
   position: absolute;
   right:0px;
   top:0px;
-  float:right;
+  width:400px;
 }
