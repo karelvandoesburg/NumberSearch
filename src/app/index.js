@@ -8,7 +8,7 @@ class Screen extends React.Component {
     constructor() {
         super();
         this.state = {
-            forms : ['Naam client', 'datum', 'dossier nummer', 'naam iets?']
+            forms : ['Dossier id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer']
         }
     }
 

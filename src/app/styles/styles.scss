@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'fonts.scss';
 
 *{
     margin:0px auto;
@@ -8,11 +9,14 @@ ul {
   list-style-type: none;
   position: absolute;
   padding:0;
-  left:30px;
+  left:0px;
   top:100px;
 }
 
 #container {
+  font-family:Fira-Sans;
+  font-size:16px;
+  color:darkgrey;
   position:absolute;
   top:50%;
   left:50%;
@@ -23,31 +27,24 @@ ul {
   margin-left: -($containerwidth/2);
 }
 
-.formunit-container {
-  position: relative;
-  width:($containerwidth+(-60));
-  height:$formunitheight;
-}
-
 .formunit {
   float:left;
   background-color:green;
-  width:($containerwidth+(-60));
+  width:$containerwidth;
   height:$formunitheight;
+  position: relative;
 }
 
 .formtext-container {
-  float:left;
-  top:0px;
+  top:10px;
   left:0px;
   position: absolute;
-  width:200px;
-  height:$formunitheight
 }
 
 .input {
   position: absolute;
   right:0px;
   top:0px;
-  width:400px;
+  width:470px;
+  height:30px;
 }
