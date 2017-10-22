@@ -1,0 +1,49 @@
+@import 'variables';
+
+*{
+    margin:0px auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#container {
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:$containerwidth;
+  height:$containerheight;
+  background-color: lightblue;
+  margin-top:-($containerheight/2);
+  margin-left: -($containerwidth/2);
+}
+
+.form {
+  position: relative;
+  width:$containerwidth;
+  height:$formunitheight;
+  background-color: red;
+}
+
+.formname {
+  float:left;
+  width:500px;
+  height:$formunitheight;
+}
+
+.formname-container {
+  float:left;
+  top:0px;
+  left:0px;
+  position: absolute;
+  width:200px;
+  height:$formunitheight
+}
+
+.input {
+  position: absolute;
+  right:0px;
+  top:0px;
+  float:right;
+}
