@@ -68,7 +68,7 @@
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports) {
 
@@ -79,7 +79,7 @@ eval("// shim for using process in browser\nvar process = module.exports = {};\n
 /*!************************************************!*\
   !*** ./node_modules/fbjs/lib/emptyFunction.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -91,7 +91,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/invariant.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -103,7 +103,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2013-
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
   \*********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -115,7 +115,7 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
 /*!**********************************************!*\
   !*** ./node_modules/fbjs/lib/emptyObject.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -127,7 +127,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2013-
 /*!******************************************!*\
   !*** ./node_modules/fbjs/lib/warning.js ***!
   \******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -139,7 +139,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2014-
 /*!*************************************!*\
   !*** ./node_modules/react/index.js ***!
   \*************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -151,7 +151,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nif (process.env.NODE_EN
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -163,7 +163,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2013-
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -175,7 +175,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!*******************************************************!*\
   !*** ./node_modules/fbjs/lib/ExecutionEnvironment.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -187,7 +187,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!************************************************!*\
   !*** ./node_modules/fbjs/lib/EventListener.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -199,7 +199,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\n/**\n * Copyright (c) 2
 /*!***********************************************!*\
   !*** ./node_modules/fbjs/lib/shallowEqual.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -211,7 +211,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!***********************************************!*\
   !*** ./node_modules/fbjs/lib/containsNode.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -223,7 +223,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/focusNode.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -235,7 +235,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!***************************************************!*\
   !*** ./node_modules/fbjs/lib/getActiveElement.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -247,19 +247,19 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!**************************!*\
   !*** ./src/app/index.js ***!
   \**************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ 6);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ 18);\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _ergatislogo = __webpack_require__(/*! ./images/ergatislogo.png */ 32);\n\nvar _ergatislogo2 = _interopRequireDefault(_ergatislogo);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Screen = function (_React$Component) {\n  _inherits(Screen, _React$Component);\n\n  function Screen() {\n    _classCallCheck(this, Screen);\n\n    var _this = _possibleConstructorReturn(this, (Screen.__proto__ || Object.getPrototypeOf(Screen)).call(this));\n\n    _this.state = {\n      forms: ['Naam client', 'datum', 'dossier nummer', 'naam iets?']\n    };\n    return _this;\n  }\n\n  _createClass(Screen, [{\n    key: 'render',\n    value: function render() {\n      var forms = this.state.forms;\n      forms = forms.map(function (formname, key) {\n        return _react2.default.createElement(Form, { formname: formname, key: key });\n      });\n      return _react2.default.createElement(\n        'div',\n        { id: 'container' },\n        _react2.default.createElement('img', { src: _ergatislogo2.default }),\n        _react2.default.createElement(\n          'ul',\n          null,\n          forms\n        )\n      );\n    }\n  }]);\n\n  return Screen;\n}(_react2.default.Component);\n\nvar Form = function (_React$Component2) {\n  _inherits(Form, _React$Component2);\n\n  function Form() {\n    _classCallCheck(this, Form);\n\n    return _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).apply(this, arguments));\n  }\n\n  _createClass(Form, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'form' },\n        _react2.default.createElement(\n          'li',\n          { className: 'formname' },\n          _react2.default.createElement(\n            'div',\n            { 'class': 'formname-container' },\n            this.props.formname,\n            ':'\n          ),\n          _react2.default.createElement(Input, { formname: this.props.formname })\n        )\n      );\n    }\n  }]);\n\n  return Form;\n}(_react2.default.Component);\n\nvar Input = function (_React$Component3) {\n  _inherits(Input, _React$Component3);\n\n  function Input() {\n    _classCallCheck(this, Input);\n\n    return _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).apply(this, arguments));\n  }\n\n  _createClass(Input, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'input' },\n        _react2.default.createElement('input', { type: 'text', name: this.props.formname })\n      );\n    }\n  }]);\n\n  return Input;\n}(_react2.default.Component);\n\n_reactDom2.default.render(_react2.default.createElement(Screen, null), document.getElementById('wrapper'));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTUuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2FwcC9pbmRleC5qcz85YmRjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBSZWFjdERPTSBmcm9tICdyZWFjdC1kb20nO1xyXG5pbXBvcnQgbG9nbyBmcm9tICcuL2ltYWdlcy9lcmdhdGlzbG9nby5wbmcnXHJcblxyXG5jbGFzcyBTY3JlZW4gZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG5cclxuICAgIGNvbnN0cnVjdG9yKCkge1xyXG4gICAgICAgIHN1cGVyKCk7XHJcbiAgICAgICAgdGhpcy5zdGF0ZSA9IHtcclxuICAgICAgICAgICAgZm9ybXMgOiBbJ05hYW0gY2xpZW50JywgJ2RhdHVtJywgJ2Rvc3NpZXIgbnVtbWVyJywgJ25hYW0gaWV0cz8nXVxyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbiAgICByZW5kZXIoKSB7XHJcbiAgICAgICAgdmFyIGZvcm1zID0gdGhpcy5zdGF0ZS5mb3JtcztcclxuICAgICAgICBmb3JtcyA9IGZvcm1zLm1hcChmdW5jdGlvbihmb3JtbmFtZSwga2V5KXtcclxuICAgICAgICAgIHJldHVybihcclxuICAgICAgICAgICAgPEZvcm0gZm9ybW5hbWU9e2Zvcm1uYW1lfSBrZXk9e2tleX0gLz5cclxuICAgICAgICAgIClcclxuICAgICAgICB9KVxyXG4gICAgICAgIHJldHVybihcclxuICAgICAgICAgICAgPGRpdiBpZD0nY29udGFpbmVyJz5cclxuICAgICAgICAgICAgICAgIDxpbWcgc3JjPXtsb2dvfSAvPlxyXG4gICAgICAgICAgICAgICAgPHVsPntmb3Jtc308L3VsPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICApO1xyXG4gICAgfVxyXG59XHJcblxyXG5jbGFzcyBGb3JtIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICByZW5kZXIoKSB7XHJcbiAgICByZXR1cm4oXHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPSdmb3JtJz5cclxuICAgICAgICA8bGkgY2xhc3NOYW1lPVwiZm9ybW5hbWVcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9J2Zvcm1uYW1lLWNvbnRhaW5lcic+e3RoaXMucHJvcHMuZm9ybW5hbWV9OjwvZGl2PlxyXG4gICAgICAgICAgPElucHV0IGZvcm1uYW1lPXt0aGlzLnByb3BzLmZvcm1uYW1lfS8+XHJcbiAgICAgICAgPC9saT5cclxuICAgICAgPC9kaXY+XHJcbiAgICApXHJcbiAgfVxyXG59XHJcblxyXG5jbGFzcyBJbnB1dCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XHJcbiAgcmVuZGVyKCkge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJpbnB1dFwiPjxpbnB1dCB0eXBlPVwidGV4dFwiIG5hbWU9e3RoaXMucHJvcHMuZm9ybW5hbWV9Lz48L2Rpdj5cclxuICAgIClcclxuICB9XHJcbn1cclxuXHJcblxyXG5cclxuUmVhY3RET00ucmVuZGVyKDxTY3JlZW4gLz4sZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3dyYXBwZXInKSk7XHJcblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBzcmMvYXBwL2luZGV4LmpzIl0sIm1hcHBpbmdzIjoiOzs7O0FBQUE7QUFDQTs7O0FBQUE7QUFDQTs7O0FBQUE7QUFDQTs7Ozs7Ozs7Ozs7QUFDQTs7O0FBRUE7QUFBQTtBQUNBO0FBREE7QUFDQTtBQUNBO0FBQ0E7QUFEQTtBQUZBO0FBS0E7QUFDQTs7O0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFHQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUZBO0FBS0E7Ozs7QUF0QkE7QUFDQTtBQXdCQTs7Ozs7Ozs7Ozs7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBRkE7QUFEQTtBQU9BOzs7O0FBVkE7QUFDQTtBQVlBOzs7Ozs7Ozs7OztBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUVBOzs7O0FBTEE7QUFDQTtBQVNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///15\n");
+eval("\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ 6);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ 18);\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _ergatislogo = __webpack_require__(/*! ./images/ergatislogo.png */ 32);\n\nvar _ergatislogo2 = _interopRequireDefault(_ergatislogo);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n// import axios from 'axios';\n\nvar Screen = function (_React$Component) {\n  _inherits(Screen, _React$Component);\n\n  function Screen() {\n    _classCallCheck(this, Screen);\n\n    var _this = _possibleConstructorReturn(this, (Screen.__proto__ || Object.getPrototypeOf(Screen)).call(this));\n\n    _this.state = {\n      forms: ['Naam client', 'datum', 'dossier nummer', 'naam iets?']\n    };\n    return _this;\n  }\n\n  _createClass(Screen, [{\n    key: 'render',\n    value: function render() {\n      var forms = this.state.forms;\n      forms = forms.map(function (formname, key) {\n        return _react2.default.createElement(Form, { formname: formname, key: key });\n      });\n      return _react2.default.createElement(\n        'div',\n        { id: 'container' },\n        _react2.default.createElement('img', { src: _ergatislogo2.default }),\n        _react2.default.createElement(\n          'ul',\n          null,\n          forms\n        )\n      );\n    }\n  }]);\n\n  return Screen;\n}(_react2.default.Component);\n\nvar Form = function (_React$Component2) {\n  _inherits(Form, _React$Component2);\n\n  function Form() {\n    _classCallCheck(this, Form);\n\n    return _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).apply(this, arguments));\n  }\n\n  _createClass(Form, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'form' },\n        _react2.default.createElement(\n          'li',\n          { className: 'formname' },\n          _react2.default.createElement(\n            'div',\n            { className: 'formname-container' },\n            this.props.formname,\n            ':'\n          ),\n          _react2.default.createElement(Input, { formname: this.props.formname })\n        )\n      );\n    }\n  }]);\n\n  return Form;\n}(_react2.default.Component);\n\nvar Input = function (_React$Component3) {\n  _inherits(Input, _React$Component3);\n\n  function Input() {\n    _classCallCheck(this, Input);\n\n    return _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).apply(this, arguments));\n  }\n\n  _createClass(Input, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'input' },\n        _react2.default.createElement('input', { type: 'text', name: this.props.formname })\n      );\n    }\n  }]);\n\n  return Input;\n}(_react2.default.Component);\n\n_reactDom2.default.render(_react2.default.createElement(Screen, null), document.getElementById('wrapper'));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTUuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2FwcC9pbmRleC5qcz85YmRjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBSZWFjdERPTSBmcm9tICdyZWFjdC1kb20nO1xyXG5pbXBvcnQgbG9nbyBmcm9tICcuL2ltYWdlcy9lcmdhdGlzbG9nby5wbmcnO1xyXG4vLyBpbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xyXG5cclxuY2xhc3MgU2NyZWVuIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuXHJcbiAgICBjb25zdHJ1Y3RvcigpIHtcclxuICAgICAgICBzdXBlcigpO1xyXG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XHJcbiAgICAgICAgICAgIGZvcm1zIDogWydOYWFtIGNsaWVudCcsICdkYXR1bScsICdkb3NzaWVyIG51bW1lcicsICduYWFtIGlldHM/J11cclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgcmVuZGVyKCkge1xyXG4gICAgICAgIHZhciBmb3JtcyA9IHRoaXMuc3RhdGUuZm9ybXM7XHJcbiAgICAgICAgZm9ybXMgPSBmb3Jtcy5tYXAoZnVuY3Rpb24oZm9ybW5hbWUsIGtleSl7XHJcbiAgICAgICAgICByZXR1cm4oXHJcbiAgICAgICAgICAgIDxGb3JtIGZvcm1uYW1lPXtmb3JtbmFtZX0ga2V5PXtrZXl9IC8+XHJcbiAgICAgICAgICApXHJcbiAgICAgICAgfSlcclxuICAgICAgICByZXR1cm4oXHJcbiAgICAgICAgICAgIDxkaXYgaWQ9J2NvbnRhaW5lcic+XHJcbiAgICAgICAgICAgICAgICA8aW1nIHNyYz17bG9nb30gLz5cclxuICAgICAgICAgICAgICAgIDx1bD57Zm9ybXN9PC91bD5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgKTtcclxuICAgIH1cclxufVxyXG5cclxuY2xhc3MgRm9ybSBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XHJcbiAgcmVuZGVyKCkge1xyXG4gICAgcmV0dXJuKFxyXG4gICAgICA8ZGl2IGNsYXNzTmFtZT0nZm9ybSc+XHJcbiAgICAgICAgPGxpIGNsYXNzTmFtZT1cImZvcm1uYW1lXCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nZm9ybW5hbWUtY29udGFpbmVyJz57dGhpcy5wcm9wcy5mb3JtbmFtZX06PC9kaXY+XHJcbiAgICAgICAgICA8SW5wdXQgZm9ybW5hbWU9e3RoaXMucHJvcHMuZm9ybW5hbWV9Lz5cclxuICAgICAgICA8L2xpPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIClcclxuICB9XHJcbn1cclxuXHJcbmNsYXNzIElucHV0IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICByZW5kZXIoKSB7XHJcbiAgICByZXR1cm4gKFxyXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImlucHV0XCI+PGlucHV0IHR5cGU9XCJ0ZXh0XCIgbmFtZT17dGhpcy5wcm9wcy5mb3JtbmFtZX0vPjwvZGl2PlxyXG4gICAgKVxyXG4gIH1cclxufVxyXG5cclxuXHJcblxyXG5SZWFjdERPTS5yZW5kZXIoPFNjcmVlbiAvPixkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnd3JhcHBlcicpKTtcclxuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIHNyYy9hcHAvaW5kZXguanMiXSwibWFwcGluZ3MiOiI7Ozs7QUFBQTtBQUNBOzs7QUFBQTtBQUNBOzs7QUFBQTtBQUNBOzs7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTs7O0FBRUE7QUFBQTtBQUNBO0FBREE7QUFDQTtBQUNBO0FBQ0E7QUFEQTtBQUZBO0FBS0E7QUFDQTs7O0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFHQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUZBO0FBS0E7Ozs7QUF0QkE7QUFDQTtBQXdCQTs7Ozs7Ozs7Ozs7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBRkE7QUFEQTtBQU9BOzs7O0FBVkE7QUFDQTtBQVlBOzs7Ozs7Ozs7OztBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUVBOzs7O0FBTEE7QUFDQTtBQVNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///15\n");
 
 /***/ }),
 /* 16 */
 /*!********************************************************!*\
   !*** ./node_modules/react/cjs/react.production.min.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -271,7 +271,7 @@ eval("/*\n React v16.0.0\n react.production.min.js\n\n Copyright (c) 2013-presen
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -283,7 +283,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/** @license React v16.0.0\
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -295,7 +295,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nfunction checkDCE() {\n
 /*!****************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.production.min.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -307,7 +307,7 @@ eval("/*\n React v16.0.0\n react-dom.production.min.js\n\n Copyright (c) 2013-pr
 /*!*********************************************!*\
   !*** ./node_modules/fbjs/lib/isTextNode.js ***!
   \*********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -319,7 +319,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!*****************************************!*\
   !*** ./node_modules/fbjs/lib/isNode.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -331,7 +331,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -343,7 +343,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/** @license React v16.0.0\
 /*!*****************************************************!*\
   !*** ./node_modules/fbjs/lib/hyphenateStyleName.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -355,7 +355,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/hyphenate.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -367,7 +367,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!****************************************************!*\
   !*** ./node_modules/fbjs/lib/camelizeStyleName.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -379,7 +379,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!*******************************************!*\
   !*** ./node_modules/fbjs/lib/camelize.js ***!
   \*******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -391,7 +391,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!*************************************************!*\
   !*** ./node_modules/fbjs/lib/performanceNow.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -403,7 +403,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source
 /*!**********************************************!*\
   !*** ./node_modules/fbjs/lib/performance.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -415,7 +415,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!******************************************!*\
   !*** ./node_modules/prop-types/index.js ***!
   \******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -426,7 +426,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2013-
 /*!************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -438,7 +438,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2013-
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithThrowingShims.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -450,7 +450,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 /*!****************************************!*\
   !*** ./src/app/images/ergatislogo.png ***!
   \****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports) {
 

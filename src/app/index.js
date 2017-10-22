@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import logo from './images/ergatislogo.png';
-import axios from 'axios';
+// import axios from 'axios';
 
 class Screen extends React.Component {
 
