@@ -6,6 +6,10 @@
 
 ul {
   list-style-type: none;
+  position: absolute;
+  padding:0;
+  left:30px;
+  top:100px;
 }
 
 #container {
@@ -21,13 +25,14 @@ ul {
 
 .form {
   position: relative;
-  width:$containerwidth;
+  width:($containerwidth+(-60));
   height:$formunitheight;
   background-color: red;
 }
 
 .formname {
   float:left;
+  background-color:green;
   width:500px;
   height:$formunitheight;
 }
