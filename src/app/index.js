@@ -134,7 +134,9 @@ class ScreenNumbers extends React.Component {
     return(
       <div className='container overal'>
           <img src={logo} />
-          <ul>{data}</ul>
+          <div className='container context' id='container-context'>
+            <ul>{data}</ul>
+          </div>
           <div className='inputbutton' id='testbutton' onClick={this.goBack}>Retrieve Information</div>
       </div>
     )
@@ -148,10 +150,12 @@ class ScreenNumbers extends React.Component {
 class Number extends React.Component {
   render() {
     return(
-      <div className="number">
+      <div>
+        <ul>
           <li>type: {this.props.type}</li>
           <li>name: {this.props.name}</li>
           <li>phone: {this.props.phone}</li>
+        </ul>
       </div>
     )
   }

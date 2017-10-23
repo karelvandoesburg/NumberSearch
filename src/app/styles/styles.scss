@@ -16,6 +16,7 @@ ul {
   color:darkgrey;
   position:absolute;
   width:$containerwidth;
+  overflow: hidden;
 }
 
 .overal {
@@ -24,12 +25,9 @@ ul {
   height:$containerheight;
   margin-top:-($containerheight/2);
   margin-left: -($containerwidth/2);
-  overflow: hidden;
-  background-color:green;
 }
 
 .context {
-  background-color:red;
   margin-top:50px;
   height: ($containerheight+(-200px));
 }
@@ -81,4 +79,10 @@ ul {
   bottom:0px;
   background-color: $ergatisblue;
   cursor:pointer;
+}
+
+#container-context {
+  ul {
+    margin-bottom:30px;
+  }
 }
