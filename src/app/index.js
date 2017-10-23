@@ -36,8 +36,9 @@ class Screen extends React.Component {
         );
     }
 
+    /*
     retrieveData() {
-      axios.post('', {
+      axios.post('/api/phones.json', {
         dossierId: this.state.inputdata[0],
         clientLastName: this.state.inputdata[1],
         clientBirthDate: this.state.inputdata[2],
@@ -51,11 +52,11 @@ class Screen extends React.Component {
         alert(error);
       })
     }
+    */
 
     changeState(value,searchnumber) {
       var array = this.state.inputdata;
       array[searchnumber]=value;
-      console.log(array);
     }
 }
 
