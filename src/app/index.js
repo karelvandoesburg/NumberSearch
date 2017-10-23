@@ -14,11 +14,12 @@ class Screen extends React.Component {
     }
 
     render() {
+        var self = this;
         var forms = this.state.forms;
         var formobjects = this.state.formobjects;
         forms = forms.map(function(item, key){
           var id = 'formid' + key;
-          var form = <Form formname={item} key={key} formid={id} />
+          var form = <Form formname={item} key={key} number={key} formid={id} changeState={self.changeState.bind(self)}/>
           formobjects.push(form);
           return(
             form
@@ -35,22 +36,23 @@ class Screen extends React.Component {
 
     retrieveData() {
       this.state.formobjects.map(function(item) {
-        console.log(item.state.input);
+        console.log(item);
       })
     }
 
-    handle(event) {
-      console.log(event.target.props.input);
+    changeState(value) {
+      console.log('hallo');
     }
 }
 
 class Form extends React.Component {
   render() {
+    var self = this;
     return(
       <div className='formunit-container'>
         <li className="formunit">
-          <div className='formtext-container' ref={this.props.formid}>{this.props.formname}:</div>
-          <Input formname={this.props.formname}/>
+          <div className='formtext-container'>{this.props.formname}:</div>
+          <Input changeState={self.props.changeState}/>
         </li>
       </div>
     )
@@ -67,12 +69,16 @@ class Input extends React.Component {
 
   render() {
     return (
-      <div><input type="text" className="input" name={this.props.formname} onChange={this.handle.bind(this)}/></div>
+      <div><input type="text" className="input" onClick={this.clicked.bind(this)} onChange={this.props.changeState(event.target.value)}/></div>
     )
   }
 
-  handle(event) {
+  setInputState(event) {
     this.setState({input : event.target.value});
+  }
+
+  clicked() {
+    console.log(this.state.input);
   }
 }
 
