@@ -22,6 +22,7 @@ class Screen extends React.Component {
           var id = 'formid' + key;
           var form = <Form formname={item} key={key} number={key} formid={id} changeState={self.changeState.bind(self)}/>
           formobjects.push(form);
+          console.log(form);
           return(
             form
           )
@@ -49,6 +50,13 @@ class Screen extends React.Component {
 }
 
 class Form extends React.Component {
+  constructor() {
+      super();
+      this.state = {
+          input : ''
+      }
+  }
+
   render() {
     var self = this;
     return(
