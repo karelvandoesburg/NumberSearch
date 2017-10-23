@@ -70,18 +70,18 @@ class Input extends React.Component {
   render() {
     var self = this;
     return (
-      <div><input type="text" className="input" onClick={this.clicked.bind(this)} onChange={this.setInputState.bind(this)}/></div>
+      <div><input type="text" className="input" onClick={this.clicked.bind(this)} onChange={this.changeInput.bind(this)}/></div>
     )
   }
 
   setInputState(event) {
     this.setState({input : event.target.value});
+    console.log(event.target.value);
   }
 
   changeInput(event) {
-    return (
-      event.target.value
-    )
+    var value = event.target.value;
+    this.props.changeState(value);
   }
 
   clicked() {
