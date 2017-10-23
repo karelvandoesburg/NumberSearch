@@ -27,6 +27,18 @@ ul {
   margin-left: -350px;
   overflow: hidden; }
 
+#notenoughinformation {
+  font-family: Fira-Sans;
+  font-size: 18px;
+  color: red;
+  width: 700px;
+  height: 30px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-left: -350px;
+  text-align: center; }
+
 .formunit {
   float: left;
   width: 700px;

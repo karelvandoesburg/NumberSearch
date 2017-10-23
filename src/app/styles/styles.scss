@@ -25,6 +25,19 @@ ul {
   overflow: hidden;
 }
 
+#notenoughinformation {
+  font-family:Fira-Sans;
+  font-size:18px;
+  color:red;
+  width:$containerwidth;
+  height:30px;
+  position: absolute;
+  top:75%;
+  left:50%;
+  margin-left:-($containerwidth/2);
+  text-align:center;
+}
+
 .formunit {
   float:left;
   width:$containerwidth;

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import logo from './images/ergatislogo.png';
 import axios from 'axios';
 
-class Screen extends React.Component {
+class ScreenStart extends React.Component {
 
     constructor() {
         super();
@@ -54,6 +54,21 @@ class Screen extends React.Component {
     }
     */
 
+    retrieveData() {
+      var self = this;
+      axios.get('/api/phones.json').then(function(response) {
+        self.processDate(response);
+      }).catch(function(error){
+        console.log(error);
+      })
+    }
+
+    processDate(response) {
+      if(response.data.length > 3) {
+        ReactDOM.render(<Warning/>, document.getElementById('notenoughinformation'))
+      }
+    }
+
     changeState(value,searchnumber) {
       var array = this.state.inputdata;
       array[searchnumber]=value;
@@ -89,4 +104,18 @@ class Input extends React.Component {
   }
 }
 
-ReactDOM.render(<Screen />,document.getElementById('wrapper'));
+class Warning extends React.Component {
+  render(){
+    return (
+      <div>Please provide more information on the client!</div>
+    )
+  }
+}
+
+class ScreenNumbers extends React.Component {
+  constructor() {
+    super();
+  }
+}
+
+ReactDOM.render(<ScreenStart />,document.getElementById('wrapper'));
