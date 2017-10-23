@@ -41,7 +41,7 @@ class Screen extends React.Component {
     }
 
     changeState(value) {
-      console.log('hallo');
+      console.log(value);
     }
 }
 
@@ -68,13 +68,20 @@ class Input extends React.Component {
   }
 
   render() {
+    var self = this;
     return (
-      <div><input type="text" className="input" onClick={this.clicked.bind(this)} onChange={this.props.changeState(event.target.value)}/></div>
+      <div><input type="text" className="input" onClick={this.clicked.bind(this)} onChange={this.setInputState.bind(this)}/></div>
     )
   }
 
   setInputState(event) {
     this.setState({input : event.target.value});
+  }
+
+  changeInput(event) {
+    return (
+      event.target.value
+    )
   }
 
   clicked() {
