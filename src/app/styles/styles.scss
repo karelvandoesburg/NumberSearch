@@ -11,7 +11,7 @@ ul {
   margin-top:45px;
 }
 
-#container {
+.container {
   font-family:Fira-Sans;
   font-size:16px;
   color:darkgrey;
@@ -19,10 +19,24 @@ ul {
   top:50%;
   left:50%;
   width:$containerwidth;
-  height:$containerheight;
   margin-top:-($containerheight/2);
   margin-left: -($containerwidth/2);
   overflow: hidden;
+}
+
+#container-start {
+  height:$containerheight;
+}
+
+#container-numbers {
+  height:$containerheight;
+  background-color:red;
+}
+
+#gobackbutton {
+  position: absolute;
+  left:0px;
+  top:100px;
 }
 
 #notenoughinformation {
@@ -63,6 +77,7 @@ ul {
 }
 
 .inputbutton {
+  width:100%;
   padding-top:10px;
   text-align: center;
   margin-top:320px;

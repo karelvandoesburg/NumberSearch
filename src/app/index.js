@@ -28,7 +28,7 @@ class ScreenStart extends React.Component {
           )
         })
         return(
-            <div id='container'>
+            <div className='container' id='container-start'>
                 <img src={logo} />
                 <ul>{forms}</ul>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
@@ -122,18 +122,18 @@ class Warning extends React.Component {
 class ScreenNumbers extends React.Component {
   render(){
     var data = this.props.response.data;
-    console.log(data[0]);
-    console.log(data[0].type);
-    /*
     data = data.map(function(item,index){
-
+      var number = <Number type={item.type} name={item.name} phone ={item.phone} key={index}/>
+      return (
+        number
+      )
     })
-    */
+
     return(
-      <div id='container'>
+      <div className='container' id='container-numbers'>
           <img src={logo} />
-          <ul></ul>
-          <div className='inputbutton' onClick={this.goBack}>Find number for new client</div>
+          <ul>{data}</ul>
+          <div className='inputbutton' id='gobackbutton' onClick={this.goBack}>Find number for new client</div>
       </div>
     )
   }
@@ -145,13 +145,15 @@ class ScreenNumbers extends React.Component {
 
 class Number extends React.Component {
   render() {
-    <div className="number">
-      <ul>
-        <li>type: </li>
-        <li>name: </li>
-        <li>phone: </li>
-      </ul>
-    </div>
+    return(
+      <div className="number">
+        <ul>
+          <li>type: {this.props.type}</li>
+          <li>name: {this.props.name}</li>
+          <li>phone: {this.props.phone}</li>
+        </ul>
+      </div>
+    )
   }
 }
 
