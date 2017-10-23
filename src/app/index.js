@@ -9,8 +9,10 @@ class Screen extends React.Component {
         super();
         this.state = {
             forms : ['File id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer'],
-            formobjects : [],
-            inputdata:['','','','','check']
+            inputdata: []
+        }
+        for(var i = 0; i < this.state.forms.length; i++) {
+          this.state.inputdata.push('');
         }
         this.changeState.bind(this);
     }
@@ -20,9 +22,7 @@ class Screen extends React.Component {
         var forms = this.state.forms;
         var formobjects = this.state.formobjects;
         forms = forms.map(function(item, key){
-          var id = 'formid' + key;
-          var form = <Form formname={item} key={key} number={key} formid={id} changeState={self.changeState.bind(self)}/>
-          formobjects.push(form);
+          var form = <Form formname={item} key={key} number={key} changeState={self.changeState.bind(self)}/>
           return(
             form
           )
@@ -50,13 +50,6 @@ class Screen extends React.Component {
 }
 
 class Form extends React.Component {
-  constructor() {
-      super();
-      this.state = {
-          inputdata : 'hallo'
-      }
-  }
-
   render() {
     var self = this;
     return(
@@ -71,33 +64,17 @@ class Form extends React.Component {
 }
 
 class Input extends React.Component {
-  constructor() {
-      super();
-      this.state = {
-          input : ""
-      }
-  }
-
   render() {
     var self = this;
     return (
-      <div><input type="text" className="input" onClick={this.clicked.bind(this)} onChange={this.changeInput.bind(this)}/></div>
+      <div><input type="text" className="input" onChange={this.changeInput.bind(this)}/></div>
     )
-  }
-
-  setInputState(event) {
-    this.setState({input : event.target.value});
-    console.log(event.target.value);
   }
 
   changeInput(event) {
     var value = event.target.value;
     var key = this.props.number;
     this.props.changeState(value,key);
-  }
-
-  clicked() {
-    console.log(this.state.input);
   }
 }
 
