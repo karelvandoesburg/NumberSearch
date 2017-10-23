@@ -37,8 +37,18 @@ class Screen extends React.Component {
     }
 
     retrieveData() {
-      this.state.formobjects.map(function(item) {
-        console.log(item);
+      axios.post('', {
+        dossierId: this.state.inputdata[0],
+        clientLastName: this.state.inputdata[1],
+        clientBirthDate: this.state.inputdata[2],
+        referrerLastName: this.state.inputdata[3],
+        referrerCompany: this.state.inputdata[4]
+      })
+      .then(function(response){
+        console.log(response);
+      })
+      .catch(function(error){
+        alert(error);
       })
     }
 
