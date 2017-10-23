@@ -9,7 +9,8 @@ class Screen extends React.Component {
         super();
         this.state = {
             forms : ['File id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer'],
-            formobjects : []
+            formobjects : [],
+            inputdata:['','','','','check']
         }
         this.changeState.bind(this);
     }
@@ -22,7 +23,6 @@ class Screen extends React.Component {
           var id = 'formid' + key;
           var form = <Form formname={item} key={key} number={key} formid={id} changeState={self.changeState.bind(self)}/>
           formobjects.push(form);
-          console.log(form);
           return(
             form
           )
@@ -43,9 +43,9 @@ class Screen extends React.Component {
     }
 
     changeState(value,searchnumber) {
-      console.log(value);
-      var form = this.state.formobjects[searchnumber];
-      console.log(form);
+      var array = this.state.inputdata;
+      array[searchnumber]=value;
+      console.log(array);
     }
 }
 
@@ -53,7 +53,7 @@ class Form extends React.Component {
   constructor() {
       super();
       this.state = {
-          input : ''
+          inputdata : 'hallo'
       }
   }
 
