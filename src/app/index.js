@@ -11,6 +11,7 @@ class Screen extends React.Component {
             forms : ['File id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer'],
             formobjects : []
         }
+        this.changeState.bind(this);
     }
 
     render() {
@@ -40,8 +41,10 @@ class Screen extends React.Component {
       })
     }
 
-    changeState(value) {
+    changeState(value,searchnumber) {
       console.log(value);
+      var form = this.state.formobjects[searchnumber];
+      console.log(form);
     }
 }
 
@@ -52,7 +55,7 @@ class Form extends React.Component {
       <div className='formunit-container'>
         <li className="formunit">
           <div className='formtext-container'>{this.props.formname}:</div>
-          <Input changeState={self.props.changeState}/>
+          <Input changeState={self.props.changeState} key={self.props.number} number={self.props.number}/>
         </li>
       </div>
     )
@@ -81,7 +84,8 @@ class Input extends React.Component {
 
   changeInput(event) {
     var value = event.target.value;
-    this.props.changeState(value);
+    var key = this.props.number;
+    this.props.changeState(value,key);
   }
 
   clicked() {
