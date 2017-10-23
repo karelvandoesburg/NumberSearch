@@ -22,21 +22,10 @@ ul {
   top: 50%;
   left: 50%;
   width: 700px;
+  height: 460px;
   margin-top: -230px;
   margin-left: -350px;
   overflow: hidden; }
-
-#container-start {
-  height: 460px; }
-
-#container-numbers {
-  height: 460px;
-  background-color: red; }
-
-#gobackbutton {
-  position: absolute;
-  left: 0px;
-  top: 100px; }
 
 #notenoughinformation {
   font-family: Fira-Sans;
@@ -71,8 +60,11 @@ ul {
   height: 30px;
   padding-left: 10px; }
 
+#testbutton {
+  margin-top: 105px; }
+
 .inputbutton {
-  width: 100%;
+  width: 700px;
   padding-top: 10px;
   text-align: center;
   margin-top: 320px;

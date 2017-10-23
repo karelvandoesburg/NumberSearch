@@ -28,7 +28,7 @@ class ScreenStart extends React.Component {
           )
         })
         return(
-            <div className='container' id='container-start'>
+            <div className='container'>
                 <img src={logo} />
                 <ul>{forms}</ul>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
@@ -130,10 +130,10 @@ class ScreenNumbers extends React.Component {
     })
 
     return(
-      <div className='container' id='container-numbers'>
+      <div className='container'>
           <img src={logo} />
           <ul>{data}</ul>
-          <div className='inputbutton' id='gobackbutton' onClick={this.goBack}>Find number for new client</div>
+          <div className='inputbutton' id='testbutton' onClick={this.goBack}>Retrieve Information</div>
       </div>
     )
   }
@@ -147,11 +147,9 @@ class Number extends React.Component {
   render() {
     return(
       <div className="number">
-        <ul>
           <li>type: {this.props.type}</li>
           <li>name: {this.props.name}</li>
           <li>phone: {this.props.phone}</li>
-        </ul>
       </div>
     )
   }
