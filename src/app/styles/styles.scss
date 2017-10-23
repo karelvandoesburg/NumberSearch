@@ -8,7 +8,6 @@
 ul {
   list-style-type: none;
   padding:0;
-  margin-top:45px;
 }
 
 .container {
@@ -16,13 +15,23 @@ ul {
   font-size:16px;
   color:darkgrey;
   position:absolute;
+  width:$containerwidth;
+}
+
+.overal {
   top:50%;
   left:50%;
-  width:$containerwidth;
   height:$containerheight;
   margin-top:-($containerheight/2);
   margin-left: -($containerwidth/2);
   overflow: hidden;
+  background-color:green;
+}
+
+.context {
+  background-color:red;
+  margin-top:50px;
+  height: ($containerheight+(-200px));
 }
 
 #notenoughinformation {
@@ -62,17 +71,14 @@ ul {
   padding-left:10px;
 }
 
-#testbutton {
-  margin-top:105px;
-}
-
 .inputbutton {
   width:$containerwidth;
   padding-top:10px;
   text-align: center;
-  margin-top:320px;
   height:30px;
   color:white;
+  position: absolute;
+  bottom:0px;
   background-color: $ergatisblue;
   cursor:pointer;
 }

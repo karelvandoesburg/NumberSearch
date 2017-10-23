@@ -28,10 +28,12 @@ class ScreenStart extends React.Component {
           )
         })
         return(
-            <div className='container'>
-                <img src={logo} />
-                <ul>{forms}</ul>
+            <div className='container overal'>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
+                <img src={logo} />
+                <div className='container context'>
+                  <ul>{forms}</ul>
+                </div>
             </div>
         );
     }
@@ -130,7 +132,7 @@ class ScreenNumbers extends React.Component {
     })
 
     return(
-      <div className='container'>
+      <div className='container overal'>
           <img src={logo} />
           <ul>{data}</ul>
           <div className='inputbutton' id='testbutton' onClick={this.goBack}>Retrieve Information</div>

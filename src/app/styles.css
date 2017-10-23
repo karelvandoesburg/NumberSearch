@@ -11,21 +11,28 @@
 
 ul {
   list-style-type: none;
-  padding: 0;
-  margin-top: 45px; }
+  padding: 0; }
 
 .container {
   font-family: Fira-Sans;
   font-size: 16px;
   color: darkgrey;
   position: absolute;
+  width: 700px; }
+
+.overal {
   top: 50%;
   left: 50%;
-  width: 700px;
-  height: 460px;
-  margin-top: -230px;
+  height: 440px;
+  margin-top: -220px;
   margin-left: -350px;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: green; }
+
+.context {
+  background-color: red;
+  margin-top: 50px;
+  height: 240px; }
 
 #notenoughinformation {
   font-family: Fira-Sans;
@@ -60,15 +67,13 @@ ul {
   height: 30px;
   padding-left: 10px; }
 
-#testbutton {
-  margin-top: 105px; }
-
 .inputbutton {
   width: 700px;
   padding-top: 10px;
   text-align: center;
-  margin-top: 320px;
   height: 30px;
   color: white;
+  position: absolute;
+  bottom: 0px;
   background-color: #00a3d3;
   cursor: pointer; }
