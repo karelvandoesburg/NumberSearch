@@ -35,12 +35,8 @@ class Screen extends React.Component {
 
     retrieveData() {
       this.state.formobjects.map(function(item) {
-        console.log(item.props.formname);
+        console.log(item.state.input);
       })
-    }
-
-    changeInput() {
-
     }
 
     handle(event) {
@@ -49,12 +45,6 @@ class Screen extends React.Component {
 }
 
 class Form extends React.Component {
-  constructor() {
-      super();
-      this.state = {
-
-      }
-  }
   render() {
     return(
       <div className='formunit-container'>
@@ -68,27 +58,21 @@ class Form extends React.Component {
 }
 
 class Input extends React.Component {
-  render() {
-    return (
-      <div><input type="text" className="input" name={this.props.formname}/></div>
-    )
-  }
-}
-
-class InputButton extends React.Component {
   constructor() {
-    super();
-    this.clicked=this.clicked.bind(this);
+      super();
+      this.state = {
+          input : ""
+      }
   }
 
   render() {
     return (
-      <div id='inputbutton' onClick={this.clicked}>Retrieve Information</div>
+      <div><input type="text" className="input" name={this.props.formname} onChange={this.handle.bind(this)}/></div>
     )
   }
 
-  clicked() {
-    console.log(this.refs.formid1);
+  handle(event) {
+    this.setState({input : event.target.value});
   }
 }
 
