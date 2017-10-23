@@ -31,9 +31,14 @@ class ScreenStart extends React.Component {
             <div id='container'>
                 <img src={logo} />
                 <ul>{forms}</ul>
-                <div id='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
+                <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
             </div>
         );
+    }
+
+    changeState(value,searchnumber) {
+      var array = this.state.inputdata;
+      array[searchnumber]=value;
     }
 
     /*
@@ -64,15 +69,18 @@ class ScreenStart extends React.Component {
     }
 
     processDate(response) {
-      if(response.data.length > 3) {
+      if(response.data.length != 3) {
         ReactDOM.render(<Warning/>, document.getElementById('notenoughinformation'))
+      }
+      else {
+        this.renderData(response);
       }
     }
 
-    changeState(value,searchnumber) {
-      var array = this.state.inputdata;
-      array[searchnumber]=value;
+    renderData(response) {
+      ReactDOM.render(<ScreenNumbers/>, document.getElementById('wrapper'))
     }
+
 }
 
 class Form extends React.Component {
@@ -115,6 +123,20 @@ class Warning extends React.Component {
 class ScreenNumbers extends React.Component {
   constructor() {
     super();
+  }
+
+  render(){
+    return(
+      <div id='container'>
+          <img src={logo} />
+          <ul></ul>
+          <div className='inputbutton' onClick={this.goBack}>Find number for new client</div>
+      </div>
+    )
+  }
+
+  goBack() {
+    ReactDOM.render(<ScreenStart />,document.getElementById('wrapper'));
   }
 }
 
