@@ -73,12 +73,8 @@ class ScreenStart extends React.Component {
         ReactDOM.render(<Warning/>, document.getElementById('notenoughinformation'))
       }
       else {
-        this.renderData(response);
+        ReactDOM.render(<ScreenNumbers response={response}/>, document.getElementById('wrapper'))
       }
-    }
-
-    renderData(response) {
-      ReactDOM.render(<ScreenNumbers/>, document.getElementById('wrapper'))
     }
 
 }
@@ -120,12 +116,19 @@ class Warning extends React.Component {
   }
 }
 
-class ScreenNumbers extends React.Component {
-  constructor() {
-    super();
-  }
 
+
+
+class ScreenNumbers extends React.Component {
   render(){
+    var data = this.props.response.data;
+    console.log(data[0]);
+    console.log(data[0].type);
+    /*
+    data = data.map(function(item,index){
+
+    })
+    */
     return(
       <div id='container'>
           <img src={logo} />
@@ -139,5 +142,21 @@ class ScreenNumbers extends React.Component {
     ReactDOM.render(<ScreenStart />,document.getElementById('wrapper'));
   }
 }
+
+class Number extends React.Component {
+  render() {
+    <div className="number">
+      <ul>
+        <li>type: </li>
+        <li>name: </li>
+        <li>phone: </li>
+      </ul>
+    </div>
+  }
+}
+
+
+
+
 
 ReactDOM.render(<ScreenStart />,document.getElementById('wrapper'));
