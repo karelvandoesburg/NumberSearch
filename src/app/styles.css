@@ -83,7 +83,6 @@ ul {
 
 .numbers {
   float: left;
-  background-color: red;
   width: 50%; }
   .numbers ul {
     margin-bottom: 55px; }
@@ -94,5 +93,5 @@ ul {
 .number {
   float: left;
   text-align: left;
-  width: 50%;
+  width: 100%;
   height: auto; }

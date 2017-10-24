@@ -63,7 +63,7 @@ class ScreenStart extends React.Component {
 
     retrieveData() {
       var self = this;
-      axios.get('/api/phones5.json').then(function(response) {
+      axios.get('/api/phones.json').then(function(response) {
         self.processDate(response);
       }).catch(function(error){
         console.log(error);
@@ -124,7 +124,24 @@ class Warning extends React.Component {
 class ScreenNumbers extends React.Component {
   render(){
     var data = this.props.response.data;
-    data = data.map(function(item,index){
+    var dataleft = [];
+    var dataright = [];
+    for(var i = 0; i < (data.length && 3); i++) {
+      dataleft[i] = data[i];
+    }
+    if(data.length > 3) {
+      for(var i = 3; i < data.length; i++) {
+        dataright[i] = data[i];
+      }
+    }
+    dataleft = dataleft.map(function(item,index){
+      var number = <Number type={item.type} name={item.name} phone ={item.phone} key={index}/>
+      return (
+        number
+      )
+    })
+    dataright = dataright.map(function(item,index){
+      index = index+3;
       var number = <Number type={item.type} name={item.name} phone ={item.phone} key={index}/>
       return (
         number
@@ -135,10 +152,10 @@ class ScreenNumbers extends React.Component {
       <div className='container overal'>
           <img src={logo} />
           <div className='container context numbers' id='numbersleft'>
-            <ul>{data}</ul>
+            <ul>{dataleft}</ul>
           </div>
           <div className='container context numbers' id='numbersright'>
-            <ul>{data}</ul>
+            <ul>{dataright}</ul>
           </div>
           <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
       </div>
