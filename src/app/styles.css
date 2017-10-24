@@ -7,11 +7,18 @@
   src: url("styles/fonts/Fira_Sans/FiraSans-Light.ttf"); }
 
 * {
-  margin: 0px auto; }
+  margin: 0px auto;
+  list-style-type: none; }
 
 ul {
-  list-style-type: none;
   padding: 0; }
+
+#of {
+  width: 700px;
+  height: 50px; }
+
+#firstform {
+  margin-top: 50px; }
 
 .container {
   font-family: Fira-Sans-Light;

@@ -3,11 +3,20 @@
 
 *{
     margin:0px auto;
+    list-style-type: none;
 }
 
 ul {
-  list-style-type: none;
   padding:0;
+}
+
+#of {
+  width:$containerwidth;
+  height:50px;
+}
+
+#firstform {
+  margin-top:50px;
 }
 
 .container {

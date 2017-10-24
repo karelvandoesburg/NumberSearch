@@ -8,7 +8,7 @@ class ScreenStart extends React.Component {
     constructor() {
         super();
         this.state = {
-            forms : ['Dossier id', 'Achternaam klant', 'geboortedatum klant', 'Achternaam verwijzer', 'Bedrijf verwijzer', 'Achternaam medewerker'],
+            forms : ['Dossier id', 'Client Naam', 'Client geboortedatum'],
             inputdata: []
         }
         for(var i = 0; i < this.state.forms.length; i++) {
@@ -20,8 +20,13 @@ class ScreenStart extends React.Component {
     render() {
         var self = this;
         var forms = this.state.forms;
-        var formobjects = this.state.formobjects;
-        forms = forms.map(function(item, key){
+        var firstform = this.state.forms[0];
+        firstform = <Form formname={firstform} changeState={this.changeState.bind(this)}/>
+        var otherforms = [];
+        for(var i = 1; i < forms.length; i++) {
+          otherforms.push(forms[i]);
+        }
+        otherforms = otherforms.map(function(item, key){
           var form = <Form formname={item} key={key} number={key} changeState={self.changeState.bind(self)}/>
           return(
             form
@@ -31,11 +36,22 @@ class ScreenStart extends React.Component {
             <div className='container overal'>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Zoek telefoonnummers</div>
                 <img src={logo} />
+                <div id='firstform'>{firstform}</div>
+                <div id='of'></div>
                 <div className='container context'>
-                  <ul>{forms}</ul>
+                  <ul>{otherforms}</ul>
                 </div>
             </div>
         );
+    }
+
+    mapForms(data) {
+      data.map(function(item, key){
+        var form = <Form formname={item} key={key} number={key} changeState={self.changeState.bind(self)}/>
+        return(
+          form
+        )
+      })
     }
 
     changeState(value,searchnumber) {
@@ -130,9 +146,7 @@ class ScreenNumbers extends React.Component {
     return(
       <div className='container overal'>
           <img src={logo} />
-          <div className='container context numbers'>
-            <ul>{dataobject}</ul>
-          </div>
+          {dataobject}
           <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
       </div>
     )
