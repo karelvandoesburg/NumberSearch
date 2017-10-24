@@ -14,11 +14,17 @@ ul {
   width:$containerwidth;
   height:40px;
   background-color: red;
-  margin-top: 95px;
+  margin-top: 0px;
 }
 
 #firstform {
-  margin-top:50px;
+  margin-top:20px;
+}
+
+#instruction{
+  margin-top:30px;
+  width:$containerwidth;
+  height:auto;
 }
 
 .container {
@@ -58,19 +64,17 @@ ul {
 }
 
 .formunit {
-  float:left;
+  // float:left;
   width:$containerwidth;
   height:$formunitheight;
-  position: relative;
 }
 
 .input {
   font-family:Fira-Sans-light;
   font-size:16px;
-  position: absolute;
   left:0px;
   top:0px;
-  width:($containerwidth+(-15px));
+  width:($containerwidth+(-14px));
   height:30px;
   padding-left:10px;
 }

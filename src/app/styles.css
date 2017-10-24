@@ -14,28 +14,33 @@ ul {
   padding: 0; }
 
 #of {
-  width: 400px;
+  width: 300px;
   height: 40px;
   background-color: red;
-  margin-top: 95px; }
+  margin-top: 0px; }
 
 #firstform {
-  margin-top: 50px; }
+  margin-top: 20px; }
+
+#instruction {
+  margin-top: 30px;
+  width: 300px;
+  height: auto; }
 
 .container {
   font-family: Fira-Sans-Light;
   font-size: 16px;
   color: #434d53;
-  width: 400px;
+  width: 300px;
   overflow: hidden; }
 
 .overal {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 390px;
-  margin-top: -195px;
-  margin-left: -200px; }
+  height: 430px;
+  margin-top: -215px;
+  margin-left: -150px; }
 
 .context {
   margin-top: 10px;
@@ -46,33 +51,30 @@ ul {
   font-family: Fira-Sans;
   font-size: 18px;
   color: #434d53;
-  width: 400px;
+  width: 300px;
   height: 30px;
   top: 50%;
   left: 50%;
-  margin-top: 225px;
-  margin-left: -200px;
+  margin-top: 245px;
+  margin-left: -150px;
   text-align: center; }
 
 .formunit {
-  float: left;
-  width: 400px;
-  height: 50px;
-  position: relative; }
+  width: 300px;
+  height: 50px; }
 
 .input {
   font-family: Fira-Sans-light;
   font-size: 16px;
-  position: absolute;
   left: 0px;
   top: 0px;
-  width: 385px;
+  width: 286px;
   height: 30px;
   padding-left: 10px; }
 
 .inputbutton {
   font-family: Fira-Sans;
-  width: 400px;
+  width: 300px;
   padding-top: 10px;
   text-align: center;
   height: 30px;
@@ -92,7 +94,7 @@ ul {
     margin-bottom: 55px; }
 
 #numbersright {
-  margin-left: 200px; }
+  margin-left: 150px; }
 
 .number {
   float: left;

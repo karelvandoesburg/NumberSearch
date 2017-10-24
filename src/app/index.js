@@ -36,6 +36,7 @@ class ScreenStart extends React.Component {
             <div className='container overal'>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Zoek telefoonnummers</div>
                 <img src={logo} />
+                <div id='instruction'>Vul het dossiernummer in of de volledige naam van de client en zijn/haar geboortedatum</div>
                 <div id='firstform'>{firstform}</div>
                 <div id='of'></div>
                 <div className='container context'>
