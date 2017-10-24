@@ -1,0 +1,27 @@
+[
+  {
+    "type":"Dossierarts",
+    "name":"Mw. A. Arts",
+    "phone":"123"
+  },
+  {
+    "type":"Trajectassistent"
+    ,"name":"Mw. T. Assistent"
+    ,"phone":"123"
+  },
+  {
+    "type":"Deskundige",
+    "name":"Dhr. D. Deskundige",
+    "phone":"123"
+  },
+{
+    "type":"Deskundige",
+    "name":"Dhr. D. Deskundige",
+    "phone":"123"
+  },
+{
+    "type":"Deskundige",
+    "name":"Dhr. D. Deskundige",
+    "phone":"123"
+  }
+]

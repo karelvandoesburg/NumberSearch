@@ -33,14 +33,15 @@ ul {
 }
 
 #notenoughinformation {
+  position: absolute;
   font-family:Fira-Sans;
   font-size:18px;
-  color:red;
+  color:$ergatisblack;
   width:$containerwidth;
   height:30px;
-  position: absolute;
-  top:75%;
+  top:50%;
   left:50%;
+  margin-top:(($containerheight/2)+30px);
   margin-left:-($containerwidth/2);
   text-align:center;
 }
@@ -88,6 +89,13 @@ ul {
 
 #container-context {
   ul {
-    margin-bottom:30px;
+    margin-bottom:55px;
   }
+}
+
+.number {
+  float:left;
+  text-align: left;
+  width:50%;
+  height:auto;
 }

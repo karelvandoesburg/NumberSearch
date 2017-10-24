@@ -8,7 +8,7 @@ class ScreenStart extends React.Component {
     constructor() {
         super();
         this.state = {
-            forms : ['File id', 'Last name of client', 'Birth date of client', 'Last Name of referrer', 'Company of referrer'],
+            forms : ['Dossier id', 'Achternaam klant', 'geboortedatum klant', 'Achternaam verwijzer', 'Bedrijf verwijzer', 'Achternaam medewerker'],
             inputdata: []
         }
         for(var i = 0; i < this.state.forms.length; i++) {
@@ -29,7 +29,7 @@ class ScreenStart extends React.Component {
         })
         return(
             <div className='container overal'>
-                <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
+                <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Zoek telefoonnummers</div>
                 <img src={logo} />
                 <div className='container context'>
                   <ul>{forms}</ul>
@@ -63,7 +63,7 @@ class ScreenStart extends React.Component {
 
     retrieveData() {
       var self = this;
-      axios.get('/api/phones.json').then(function(response) {
+      axios.get('/api/phones5.json').then(function(response) {
         self.processDate(response);
       }).catch(function(error){
         console.log(error);
@@ -71,7 +71,7 @@ class ScreenStart extends React.Component {
     }
 
     processDate(response) {
-      if(response.data.length != 3) {
+      if(response.data.length > 3) {
         ReactDOM.render(<Warning/>, document.getElementById('notenoughinformation'))
       }
       else {
@@ -137,7 +137,7 @@ class ScreenNumbers extends React.Component {
           <div className='container context' id='container-context'>
             <ul>{data}</ul>
           </div>
-          <div className='inputbutton' id='backbutton' onClick={this.goBack}>Retrieve Information</div>
+          <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
       </div>
     )
   }
@@ -150,7 +150,7 @@ class ScreenNumbers extends React.Component {
 class Number extends React.Component {
   render() {
     return(
-      <div>
+      <div className="number">
         <ul>
           <li>type: {this.props.type}</li>
           <li>name: {this.props.name}</li>

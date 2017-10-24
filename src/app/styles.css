@@ -24,23 +24,24 @@ ul {
 .overal {
   top: 50%;
   left: 50%;
-  height: 440px;
-  margin-top: -220px;
+  height: 490px;
+  margin-top: -245px;
   margin-left: -350px; }
 
 .context {
   margin-top: 50px;
-  height: 240px; }
+  height: 290px; }
 
 #notenoughinformation {
+  position: absolute;
   font-family: Fira-Sans;
   font-size: 18px;
-  color: red;
+  color: #434d53;
   width: 700px;
   height: 30px;
-  position: absolute;
-  top: 75%;
+  top: 50%;
   left: 50%;
+  margin-top: 275px;
   margin-left: -350px;
   text-align: center; }
 
@@ -81,4 +82,10 @@ ul {
   background-color: #434d53; }
 
 #container-context ul {
-  margin-bottom: 30px; }
+  margin-bottom: 55px; }
+
+.number {
+  float: left;
+  text-align: left;
+  width: 50%;
+  height: auto; }
