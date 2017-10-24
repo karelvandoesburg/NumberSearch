@@ -36,9 +36,11 @@ class ScreenStart extends React.Component {
             <div className='container overal'>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Zoek telefoonnummers</div>
                 <img src={logo} />
-                <div id='instruction'>Vul het dossiernummer in of de volledige naam van de client en zijn/haar geboortedatum</div>
+                <div id='instruction'>Vul het dossiernummer of de volledige naam van de client en zijn/haar geboortedatum in</div>
                 <div id='firstform'>{firstform}</div>
-                <div id='of'></div>
+                <div id='line'>
+                  <div id='of'>OF</div>
+                </div>
                 <div className='container context'>
                   <ul>{otherforms}</ul>
                 </div>
@@ -104,7 +106,7 @@ class Form extends React.Component {
     return(
       <div className='formunit-container'>
         <li className="formunit">
-          <Input changeState={self.props.changeState} key={self.props.number} number={self.props.number}/>
+          <Input placeholder={self.props.formname} changeState={self.props.changeState} key={self.props.number} number={self.props.number}/>
         </li>
       </div>
     )
@@ -115,7 +117,7 @@ class Input extends React.Component {
   render() {
     var self = this;
     return (
-      <div><input type="text" className="input" onChange={this.changeInput.bind(this)}/></div>
+      <div><input placeholder={this.props.placeholder} type="text" className="input" onChange={this.changeInput.bind(this)}/></div>
     )
   }
 

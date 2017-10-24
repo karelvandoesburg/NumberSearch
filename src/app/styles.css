@@ -13,11 +13,24 @@
 ul {
   padding: 0; }
 
-#of {
+#line {
   width: 300px;
-  height: 40px;
-  background-color: red;
-  margin-top: 0px; }
+  height: 18px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: darkgrey; }
+
+#of {
+  position: absolute;
+  height: 20px;
+  width: 70px;
+  padding-top: 8px;
+  left: 50%;
+  margin-left: -35px;
+  background-color: white;
+  text-align: center; }
 
 #firstform {
   margin-top: 20px; }
@@ -100,4 +113,7 @@ ul {
   float: left;
   text-align: left;
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-top: 110px; }
+  .number li {
+    margin-top: 5px; }
