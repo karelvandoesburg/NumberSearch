@@ -14,9 +14,9 @@ ul {
   padding: 0; }
 
 .container {
-  font-family: Fira-Sans;
+  font-family: Fira-Sans-Light;
   font-size: 16px;
-  color: darkgrey;
+  color: #434d53;
   position: absolute;
   width: 700px;
   overflow: hidden; }
@@ -66,6 +66,7 @@ ul {
   padding-left: 10px; }
 
 .inputbutton {
+  font-family: Fira-Sans;
   width: 700px;
   padding-top: 10px;
   text-align: center;
@@ -75,6 +76,9 @@ ul {
   bottom: 0px;
   background-color: #00a3d3;
   cursor: pointer; }
+
+#backbutton {
+  background-color: #434d53; }
 
 #container-context ul {
   margin-bottom: 30px; }

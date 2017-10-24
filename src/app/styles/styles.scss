@@ -11,9 +11,9 @@ ul {
 }
 
 .container {
-  font-family:Fira-Sans;
+  font-family:Fira-Sans-Light;
   font-size:16px;
-  color:darkgrey;
+  color:$ergatisblack;
   position:absolute;
   width:$containerwidth;
   overflow: hidden;
@@ -70,6 +70,7 @@ ul {
 }
 
 .inputbutton {
+  font-family:Fira-Sans;
   width:$containerwidth;
   padding-top:10px;
   text-align: center;
@@ -79,6 +80,10 @@ ul {
   bottom:0px;
   background-color: $ergatisblue;
   cursor:pointer;
+}
+
+#backbutton {
+  background-color:$ergatisblack;
 }
 
 #container-context {

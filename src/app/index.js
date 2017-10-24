@@ -137,7 +137,7 @@ class ScreenNumbers extends React.Component {
           <div className='container context' id='container-context'>
             <ul>{data}</ul>
           </div>
-          <div className='inputbutton' id='testbutton' onClick={this.goBack}>Retrieve Information</div>
+          <div className='inputbutton' id='backbutton' onClick={this.goBack}>Retrieve Information</div>
       </div>
     )
   }
