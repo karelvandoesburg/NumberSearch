@@ -14,23 +14,24 @@ ul {
   padding: 0; }
 
 .container {
-  font-family: Fira-Sans;
+  font-family: Fira-Sans-Light;
   font-size: 16px;
-  color: darkgrey;
-  position: absolute;
-  width: 700px;
-  overflow: hidden; }
+  color: #585757;
+  width: 700px; }
 
 .overal {
+  position: absolute;
   top: 50%;
   left: 50%;
-  height: 440px;
+  height: auto;
   margin-top: -220px;
-  margin-left: -350px; }
+  margin-left: -350px;
+  background-color: red; }
 
 .context {
   margin-top: 50px;
-  height: 240px; }
+  background-color: grey;
+  height: auto; }
 
 #notenoughinformation {
   font-family: Fira-Sans;
@@ -44,16 +45,19 @@ ul {
   margin-left: -350px;
   text-align: center; }
 
+.formunit-container {
+  position: relative;
+  margin-bottom: 30px;
+  padding-top: 10px; }
+
 .formunit {
   float: left;
   width: 700px;
-  height: 50px;
-  position: relative; }
+  height: 50px; }
 
 .formtext-container {
   top: 10px;
-  left: 0px;
-  position: absolute; }
+  left: 0px; }
 
 .input {
   font-family: Fira-Sans-light;
@@ -66,15 +70,22 @@ ul {
   padding-left: 10px; }
 
 .inputbutton {
+  font-family: Fira-Sans;
   width: 700px;
   padding-top: 10px;
   text-align: center;
   height: 30px;
   color: white;
-  position: absolute;
-  bottom: 0px;
   background-color: #00a3d3;
   cursor: pointer; }
 
-#container-context ul {
-  margin-bottom: 30px; }
+#backbutton {
+  background-color: #434d53;
+  float: left; }
+
+#context2 {
+  font-family: Fira-Sans-Light;
+  height: auto;
+  position: inherit; }
+  #context2 ul {
+    margin-bottom: 30px; }

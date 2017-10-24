@@ -11,25 +11,26 @@ ul {
 }
 
 .container {
-  font-family:Fira-Sans;
+  font-family:Fira-Sans-Light;
   font-size:16px;
-  color:darkgrey;
-  position:absolute;
+  color:$darkgrey;
   width:$containerwidth;
-  overflow: hidden;
 }
 
 .overal {
+  position:absolute;
   top:50%;
   left:50%;
-  height:$containerheight;
+  height:auto;
   margin-top:-($containerheight/2);
   margin-left: -($containerwidth/2);
+  background-color:red;
 }
 
-.context {
+.context{
   margin-top:50px;
-  height: ($containerheight+(-200px));
+  background-color:grey;
+  height: auto;
 }
 
 #notenoughinformation {
@@ -45,17 +46,21 @@ ul {
   text-align:center;
 }
 
+.formunit-container {
+  position: relative;
+  margin-bottom:30px;
+  padding-top:10px;
+}
+
 .formunit {
   float:left;
   width:$containerwidth;
   height:$formunitheight;
-  position: relative;
 }
 
 .formtext-container {
   top:10px;
   left:0px;
-  position: absolute;
 }
 
 .input {
@@ -70,19 +75,26 @@ ul {
 }
 
 .inputbutton {
+  font-family: Fira-Sans;
   width:$containerwidth;
   padding-top:10px;
   text-align: center;
   height:30px;
   color:white;
-  position: absolute;
-  bottom:0px;
   background-color: $ergatisblue;
   cursor:pointer;
 }
 
-#container-context {
+#backbutton {
+  background-color: $ergatisblack;
+  float:left;
+}
+
+#context2 {
+  font-family:Fira-Sans-Light;
+  height:auto;
   ul {
     margin-bottom:30px;
   }
+  position: inherit;
 }

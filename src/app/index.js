@@ -29,11 +29,11 @@ class ScreenStart extends React.Component {
         })
         return(
             <div className='container overal'>
-                <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
                 <img src={logo} />
-                <div className='container context'>
+                <div className='container context' id='context1'>
                   <ul>{forms}</ul>
                 </div>
+                <div className='inputbutton' id='searchbutton' onClick={this.retrieveData.bind(this)}>Retrieve Information</div>
             </div>
         );
     }
@@ -86,10 +86,8 @@ class Form extends React.Component {
     var self = this;
     return(
       <div className='formunit-container'>
-        <li className="formunit">
           <div className='formtext-container'>{this.props.formname}:</div>
           <Input changeState={self.props.changeState} key={self.props.number} number={self.props.number}/>
-        </li>
       </div>
     )
   }
@@ -134,10 +132,10 @@ class ScreenNumbers extends React.Component {
     return(
       <div className='container overal'>
           <img src={logo} />
-          <div className='container context' id='container-context'>
+          <div className='container context' id='context2'>
             <ul>{data}</ul>
           </div>
-          <div className='inputbutton' id='testbutton' onClick={this.goBack}>Retrieve Information</div>
+          <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
       </div>
     )
   }
@@ -150,7 +148,7 @@ class ScreenNumbers extends React.Component {
 class Number extends React.Component {
   render() {
     return(
-      <div>
+      <div id='numbers'>
         <ul>
           <li>type: {this.props.type}</li>
           <li>name: {this.props.name}</li>
