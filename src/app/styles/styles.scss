@@ -87,10 +87,17 @@ ul {
   background-color:$ergatisblack;
 }
 
-#container-context {
+.numbers {
+  float:left;
   ul {
     margin-bottom:55px;
   }
+  background-color:red;
+  width:50%;
+}
+
+#numbersright {
+  margin-left:($containerwidth/2);
 }
 
 .number {

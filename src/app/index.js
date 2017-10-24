@@ -134,7 +134,10 @@ class ScreenNumbers extends React.Component {
     return(
       <div className='container overal'>
           <img src={logo} />
-          <div className='container context' id='container-context'>
+          <div className='container context numbers' id='numbersleft'>
+            <ul>{data}</ul>
+          </div>
+          <div className='container context numbers' id='numbersright'>
             <ul>{data}</ul>
           </div>
           <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>

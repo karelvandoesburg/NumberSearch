@@ -81,8 +81,15 @@ ul {
 #backbutton {
   background-color: #434d53; }
 
-#container-context ul {
-  margin-bottom: 55px; }
+.numbers {
+  float: left;
+  background-color: red;
+  width: 50%; }
+  .numbers ul {
+    margin-bottom: 55px; }
+
+#numbersright {
+  margin-left: 350px; }
 
 .number {
   float: left;
