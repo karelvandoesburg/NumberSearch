@@ -63,7 +63,7 @@ class ScreenStart extends React.Component {
 
     retrieveData() {
       var self = this;
-      axios.get('/api/phones5.json').then(function(response) {
+      axios.get('/api/phonesnew.json').then(function(response) {
         self.processDate(response);
       }).catch(function(error){
         console.log(error);
@@ -123,42 +123,18 @@ class Warning extends React.Component {
 
 class ScreenNumbers extends React.Component {
   render(){
-    var data = this.props.response.data;
-    var dataleft = [];
-    var dataright = [];
-    for(var i = 0; i < (data.length && 3); i++) {
-      dataleft[i] = data[i];
-    }
-    if(data.length > 3) {
-      for(var i = 3; i < data.length; i++) {
-        dataright[i] = data[i];
-      }
-    }
-    dataleft = this.placeData(dataleft);
-    dataright = this.placeData(dataright);
+    var data = this.props.response.data[0];
+    var dataobject = <Number type={data.type} name={data.name} phone={data.phone}/>;
+    console.log(data);
 
     return(
       <div className='container overal'>
           <img src={logo} />
-          <div className='container context numbers' id='numbersleft'>
-            <ul>{dataleft}</ul>
-          </div>
-          <div className='container context numbers' id='numbersright'>
-            <ul>{dataright}</ul>
+          <div className='container context numbers'>
+            <ul>{dataobject}</ul>
           </div>
           <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
       </div>
-    )
-  }
-
-  placeData(data) {
-    return(
-      data.map(function(item,index){
-        var number = <Number type={item.type} name={item.name} phone ={item.phone} key={index}/>
-        return (
-          number
-        )
-      })
     )
   }
 
