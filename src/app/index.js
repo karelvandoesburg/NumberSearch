@@ -71,7 +71,7 @@ class ScreenStart extends React.Component {
     }
 
     processDate(response) {
-      if(response.data.length > 3) {
+      if(response.data.length > 5) {
         ReactDOM.render(<Warning/>, document.getElementById('notenoughinformation'))
       }
       else {
@@ -113,7 +113,7 @@ class Input extends React.Component {
 class Warning extends React.Component {
   render(){
     return (
-      <div>Please provide more information on the client!</div>
+      <div>Geef alstublieft meer informatie over de klant!</div>
     )
   }
 }
