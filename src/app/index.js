@@ -173,8 +173,8 @@ class Number extends React.Component {
       <div className="number">
         <ul>
           <li><span style={{fontFamily:"Fira-Sans"}}>{this.props.type}</span></li>
-          <li>name: {this.props.name}</li>
-          <li>phone: {this.props.phone}</li>
+          <li>naam: <span style={{marginLeft:40 + "px"}}>{this.props.name}</span></li>
+          <li>telefoon: <span style={{marginLeft:21 + "px"}}>{this.props.phone}</span></li>
         </ul>
       </div>
     )
