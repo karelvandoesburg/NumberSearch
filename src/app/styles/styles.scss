@@ -12,7 +12,9 @@ ul {
 
 #of {
   width:$containerwidth;
-  height:50px;
+  height:40px;
+  background-color: red;
+  margin-top: 95px;
 }
 
 #firstform {
@@ -23,12 +25,12 @@ ul {
   font-family:Fira-Sans-Light;
   font-size:16px;
   color:$ergatisblack;
-  position:absolute;
   width:$containerwidth;
   overflow: hidden;
 }
 
 .overal {
+  position:absolute;
   top:50%;
   left:50%;
   height:$containerheight;
@@ -37,8 +39,8 @@ ul {
 }
 
 .context {
-  margin-top:50px;
-  height: ($containerheight+(-200px));
+  margin-top:10px;
+  height: auto;
 }
 
 #notenoughinformation {
@@ -62,19 +64,13 @@ ul {
   position: relative;
 }
 
-.formtext-container {
-  top:10px;
-  left:0px;
-  position: absolute;
-}
-
 .input {
   font-family:Fira-Sans-light;
   font-size:16px;
   position: absolute;
-  right:0px;
+  left:0px;
   top:0px;
-  width:470px;
+  width:($containerwidth+(-15px));
   height:30px;
   padding-left:10px;
 }

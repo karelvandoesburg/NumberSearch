@@ -103,7 +103,6 @@ class Form extends React.Component {
     return(
       <div className='formunit-container'>
         <li className="formunit">
-          <div className='formtext-container'>{this.props.formname}:</div>
           <Input changeState={self.props.changeState} key={self.props.number} number={self.props.number}/>
         </li>
       </div>

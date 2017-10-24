@@ -14,8 +14,10 @@ ul {
   padding: 0; }
 
 #of {
-  width: 700px;
-  height: 50px; }
+  width: 400px;
+  height: 40px;
+  background-color: red;
+  margin-top: 95px; }
 
 #firstform {
   margin-top: 50px; }
@@ -24,58 +26,53 @@ ul {
   font-family: Fira-Sans-Light;
   font-size: 16px;
   color: #434d53;
-  position: absolute;
-  width: 700px;
+  width: 400px;
   overflow: hidden; }
 
 .overal {
+  position: absolute;
   top: 50%;
   left: 50%;
-  height: 490px;
-  margin-top: -245px;
-  margin-left: -350px; }
+  height: 390px;
+  margin-top: -195px;
+  margin-left: -200px; }
 
 .context {
-  margin-top: 50px;
-  height: 290px; }
+  margin-top: 10px;
+  height: auto; }
 
 #notenoughinformation {
   position: absolute;
   font-family: Fira-Sans;
   font-size: 18px;
   color: #434d53;
-  width: 700px;
+  width: 400px;
   height: 30px;
   top: 50%;
   left: 50%;
-  margin-top: 275px;
-  margin-left: -350px;
+  margin-top: 225px;
+  margin-left: -200px;
   text-align: center; }
 
 .formunit {
   float: left;
-  width: 700px;
+  width: 400px;
   height: 50px;
   position: relative; }
-
-.formtext-container {
-  top: 10px;
-  left: 0px;
-  position: absolute; }
 
 .input {
   font-family: Fira-Sans-light;
   font-size: 16px;
   position: absolute;
-  right: 0px;
+  left: 0px;
   top: 0px;
-  width: 470px;
+  width: 385px;
   height: 30px;
   padding-left: 10px; }
 
 .inputbutton {
   font-family: Fira-Sans;
-  width: 700px;
+  width: 400px;
   padding-top: 10px;
   text-align: center;
   height: 30px;
@@ -95,7 +92,7 @@ ul {
     margin-bottom: 55px; }
 
 #numbersright {
-  margin-left: 350px; }
+  margin-left: 200px; }
 
 .number {
   float: left;
