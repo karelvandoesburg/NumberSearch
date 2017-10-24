@@ -71,10 +71,9 @@ class ScreenStart extends React.Component {
         referrerLastName: this.state.inputdata[3],
         referrerCompany: this.state.inputdata[4]
       })
-      .then(function(response){
-        console.log(response);
-      })
-      .catch(function(error){
+      then(function(response) {
+        self.processDate(response);
+      }).catch(function(error){
         alert(error);
       })
     }
@@ -85,12 +84,12 @@ class ScreenStart extends React.Component {
       axios.get('/api/phonesnew.json').then(function(response) {
         self.processDate(response);
       }).catch(function(error){
-        console.log(error);
+        alert(error);
       })
     }
 
     processDate(response) {
-      if(response.data.length > 5) {
+      if(response.data.length != 1) {
         ReactDOM.render(<Warning/>, document.getElementById('notenoughinformation'))
       }
       else {
