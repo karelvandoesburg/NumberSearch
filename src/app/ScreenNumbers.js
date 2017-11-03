@@ -1,0 +1,27 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Number from './Number';
+import logo from './images/ergatislogo.png';
+import ScreenStart from './ScreenStart';
+
+var ScreenNumbers = class ScreenNumbers extends React.Component {
+  render(){
+    var data = this.props.response.data[0];
+    var dataobject = <Number type={data.type} name={data.name} phone={data.phone}/>;
+    console.log(data);
+
+    return(
+      <div className='container overal'>
+          <img src={logo} />
+          {dataobject}
+          <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
+      </div>
+    )
+  }
+
+  goBack() {
+    ReactDOM.render(<ScreenStart />,document.getElementById('wrapper'));
+  }
+}
+
+module.exports = ScreenNumbers;

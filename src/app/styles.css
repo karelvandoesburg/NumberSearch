@@ -117,3 +117,19 @@ ul {
   margin-top: 110px; }
   .number li {
     margin-top: 5px; }
+  .number ul {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    border-color: darkgrey; }
+
+#trajectassistent-header {
+  width: auto;
+  height: 25px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  border-top: 1px;
+  border-top-style: solid;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: darkgrey; }
