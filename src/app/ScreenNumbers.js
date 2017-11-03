@@ -24,4 +24,4 @@ var ScreenNumbers = class ScreenNumbers extends React.Component {
   }
 }
 
-module.exports = ScreenNumbers;
+export default ScreenNumbers

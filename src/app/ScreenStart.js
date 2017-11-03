@@ -5,7 +5,7 @@ import axios from 'axios';
 import Form from './Form';
 import ScreenNumbers from './ScreenNumbers';
 
-var ScreenStart = class ScreenStart extends React.Component {
+class ScreenStart extends React.Component {
 
     constructor() {
         super();
@@ -34,7 +34,7 @@ var ScreenStart = class ScreenStart extends React.Component {
             form
           )
         })
-        return(
+        return (
             <div className='container overal'>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Zoek telefoonnummers</div>
                 <img src={logo} />
@@ -47,7 +47,7 @@ var ScreenStart = class ScreenStart extends React.Component {
                   <ul>{otherforms}</ul>
                 </div>
             </div>
-        );
+        )
     }
 
     mapForms(data) {
@@ -105,4 +105,4 @@ var ScreenStart = class ScreenStart extends React.Component {
     }
 }
 
-module.exports = ScreenStart;
+export default ScreenStart

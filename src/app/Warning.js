@@ -8,4 +8,4 @@ class Warning extends React.Component {
   }
 }
 
-module.exports = Warning;
+export default Warning

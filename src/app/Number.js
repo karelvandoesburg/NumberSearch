@@ -14,4 +14,4 @@ class Number extends React.Component {
   }
 }
 
-module.exports = Number;
+export default Number
