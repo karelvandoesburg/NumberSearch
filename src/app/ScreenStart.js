@@ -4,13 +4,14 @@ import logo from './images/ergatislogo.png';
 import axios from 'axios';
 import Form from './Form';
 import ScreenNumbers from './ScreenNumbers';
+import Warning from './Warning';
 
 class ScreenStart extends React.Component {
 
     constructor() {
         super();
         this.state = {
-            forms : ['Dossier id', 'Client achternaam', 'Client geboortedatum'],
+            forms : ['Dossiernummer', 'Cliënt achternaam', 'Cliënt geboortedatum (dd-mm-jjjj)'],
             inputdata: []
         }
         for(var i = 0; i < this.state.forms.length; i++) {
@@ -64,7 +65,6 @@ class ScreenStart extends React.Component {
       array[searchnumber]=value;
     }
 
-    /*
     retrieveData() {
       var api = '5fca7';
       var self = this;
@@ -75,6 +75,16 @@ class ScreenStart extends React.Component {
         dossierId: this.state.inputdata[0]
       })
       .then(function(response) {
+        self.processDate(response.data);
+      }).catch(function(error){
+        alert(error);
+      })
+    }
+
+    /*
+    retrieveData() {
+      var self = this;
+      axios.get('/api/phonesnew.json').then(function(response) {
         self.processDate(response);
       }).catch(function(error){
         alert(error);
@@ -82,26 +92,31 @@ class ScreenStart extends React.Component {
     }
     */
 
-    retrieveData() {
-      var self = this;
-      console.log(this.state.inputdata);
-      console.log("dossierid = "+this.state.inputdata[0]);
-      console.log("client achternaam = "+this.state.inputdata[1]);
-      console.log("datum: " + this.state.inputdata[2]);
-      axios.get('/api/phonesnew.json').then(function(response) {
-        self.processDate(response);
-      }).catch(function(error){
-        alert(error);
-      })
-    }
-
     processDate(response) {
-      if(response.data.length != 1) {
-        ReactDOM.render(<Warning/>, document.getElementById('notenoughinformation'))
+      if(this.checkError(response) == true) {
+        ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"))
+        this.processError(response);
       }
       else {
-        ReactDOM.render(<ScreenNumbers response={response}/>, document.getElementById('wrapper'))
+        ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"))
+        ReactDOM.render(<ScreenNumbers response={response}/>, document.getElementById('wrapper'));
       }
+    }
+
+    checkError(response) {
+      if (response.error) {return true;}
+      else {return false;}
+    }
+
+    processError(response) {
+      var err = response.error;
+      var message='';
+      if(err == "Access denied") {message = "U heeft geen toegang tot de server";}
+      else if(err == "Specify all details") {message = "Vul alstublieft meer informatie in";}
+      else if(err == "No results found") {message = "Er zijn geen resultaten gevonden";}
+      else if(err == "Assistant unavailable") {message = "De Trajectassistent is momenteel niet bereikbaar"}
+      else {var message = "Er is iets fout gegaan, probeer het opnieuw";}
+      ReactDOM.render(<Warning error={message}/>, document.getElementById("notenoughinformation"))
     }
 }
 

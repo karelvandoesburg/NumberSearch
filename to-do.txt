@@ -1,0 +1,10 @@
+- als de naam te lang is, ziet ie em op een nieuwe regel [20:03, 5-11-2017] Koen Barbiers: white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+- dossied id veranderen in dossiernummer
+- client met umlaude doen
+- geboortedatum dd-mm-jjjj erachter
+
+
+- haal de error weg als er een nieuwe zoekopdracht gedaan wordt
+- lijntje boven Trajactassistent weg
+- fadein bij error
+- rechter lijntjes vallen weg (probeer verschillende screen resoluties)

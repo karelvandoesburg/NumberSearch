@@ -6,8 +6,8 @@ class Number extends React.Component {
       <div className="number">
         <ul>
           <li id='trajectassistent-header'><span style={{fontFamily:"Fira-Sans"}}>Trajectassistent</span></li>
-          <li>naam: <span style={{marginLeft:40 + "px"}}>{this.props.name}</span></li>
-          <li>telefoon: <span style={{marginLeft:21 + "px"}}>{this.props.phone}</span></li>
+          <li>Naam: <span style={{marginLeft:40 + "px"}}>{this.props.name}</span></li>
+          <li>Telefoon: <span style={{marginLeft:21 + "px"}}>{this.props.phone}</span></li>
         </ul>
       </div>
     )
