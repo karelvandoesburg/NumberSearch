@@ -10,11 +10,12 @@ import Logo from './Logo';
 
 class ScreenStart extends React.Component {
 
-    constructor() {
+    constructor(props) {
         super();
         this.state = {
             forms : ['Dossiernummer', 'Cliënt achternaam', 'Cliënt geboortedatum (dd-mm-jjjj)'],
-            inputdata: []
+            inputdata: [],
+            company: props.company
         }
         for(var i = 0; i < this.state.forms.length; i++) {
           this.state.inputdata.push('');
@@ -40,9 +41,8 @@ class ScreenStart extends React.Component {
         return (
             <div className='container overal'>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Zoek telefoonnummers</div>
-                <Logo company={this.props.company} />
                 <div id='instruction'>Kies een bedrijf en vul het dossiernummer of de volledige naam van de client en zijn/haar geboortedatum in</div>
-                <CompanyChoice company={this.props.company}/>
+                <CompanyChoice company={this.props.company}  changeCompany={this.changeCompany.bind(this)}/>
                 <div id='firstform'>{firstform}</div>
                 <div id='line'>
                   <div id='of'>OF</div>
@@ -130,6 +130,15 @@ class ScreenStart extends React.Component {
       if(code === 13) {
         self.retrieveData();
       }
+    }
+
+    displayLogo() {
+      ReactDOM.render(<Logo company={this.state.company}/>,document.getElementById('wrapper'));
+    }
+
+    changeCompany(company) {
+      this.state.company = company;
+      ReactDOM.render(<Logo company={this.state.company}/>,document.getElementById('logo-container'));
     }
 
 }

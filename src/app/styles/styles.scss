@@ -10,6 +10,7 @@ ul {
   padding:0;
 }
 
+
 #ergatis {
   height:75px;
   width:240px;
@@ -71,7 +72,7 @@ ul {
   position:absolute;
   top:50%;
   left:50%;
-  height:$containerheight;
+  height:$containerheight+(-75);
   margin-top:-($containerheight/2);
   margin-left: -($containerwidth/2);
 }
