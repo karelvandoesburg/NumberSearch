@@ -5,6 +5,8 @@ import axios from 'axios';
 import Form from './Form';
 import ScreenNumbers from './ScreenNumbers';
 import Warning from './Warning';
+import CompanyChoice from './CompanyChoice';
+import Logo from './Logo';
 
 class ScreenStart extends React.Component {
 
@@ -38,8 +40,9 @@ class ScreenStart extends React.Component {
         return (
             <div className='container overal'>
                 <div className='inputbutton' onClick={this.retrieveData.bind(this)}>Zoek telefoonnummers</div>
-                <img src={logo} />
-                <div id='instruction'>Vul het dossiernummer of de volledige naam van de client en zijn/haar geboortedatum in</div>
+                <Logo company={this.props.company} />
+                <div id='instruction'>Kies een bedrijf en vul het dossiernummer of de volledige naam van de client en zijn/haar geboortedatum in</div>
+                <CompanyChoice company={this.props.company}/>
                 <div id='firstform'>{firstform}</div>
                 <div id='line'>
                   <div id='of'>OF</div>
@@ -65,6 +68,7 @@ class ScreenStart extends React.Component {
       array[searchnumber]=value;
     }
 
+    /*
     retrieveData() {
       var api = '5fca7';
       var self = this;
@@ -80,17 +84,17 @@ class ScreenStart extends React.Component {
         alert(error);
       })
     }
+    */
 
-    /*
+
     retrieveData() {
       var self = this;
       axios.get('/api/phonesnew.json').then(function(response) {
-        self.processDate(response);
+        self.processDate(response.data);
       }).catch(function(error){
         alert(error);
       })
     }
-    */
 
     processDate(response) {
       if(this.checkError(response) == true) {

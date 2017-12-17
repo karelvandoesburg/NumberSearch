@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Number from './Number';
-import logo from './images/ergatislogo.png';
 import ScreenStart from './ScreenStart';
 
 class ScreenNumbers extends React.Component {

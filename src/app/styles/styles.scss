@@ -10,6 +10,17 @@ ul {
   padding:0;
 }
 
+#ergatis {
+  height:75px;
+  width:240px;
+}
+
+#sitagre {
+  height:82px;
+  width:264px;
+  margin-bottom:-7px;
+}
+
 #line {
   width:$containerwidth;
   height:18px;
@@ -32,13 +43,20 @@ ul {
 }
 
 #firstform {
-  margin-top:20px;
+  margin-top:15px;
 }
 
 #instruction{
   margin-top:30px;
   width:$containerwidth;
   height:auto;
+}
+
+#company-form {
+  margin-top:10px;
+  input {
+    margin-top:5px;
+  }
 }
 
 .container {
@@ -129,7 +147,7 @@ ul {
   text-align: left;
   width:100%;
   height:auto;
-  margin-top:110px;
+  margin-top:125px;
   li{
     margin-top:5px;
     white-space: nowrap;
