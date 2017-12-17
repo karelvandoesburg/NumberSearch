@@ -4,7 +4,7 @@ class Input extends React.Component {
   render() {
     var self = this;
     return (
-      <div><input placeholder={this.props.placeholder} type="text" className="input" onChange={this.changeInput.bind(this)}/></div>
+      <div><input placeholder={this.props.placeholder} type="text" className="input" onChange={this.changeInput.bind(this)} onKeyDown={this.props.enterPressed}/></div>
     )
   }
 

@@ -7,7 +7,7 @@ class Form extends React.Component {
     return(
       <div className='formunit-container'>
         <li className="formunit">
-          <Input placeholder={self.props.formname} changeState={self.props.changeState} key={self.props.number} number={self.props.number}/>
+          <Input placeholder={self.props.formname} changeState={self.props.changeState} key={self.props.number} number={self.props.number} enterPressed={self.props.enterPressed}/>
         </li>
       </div>
     )

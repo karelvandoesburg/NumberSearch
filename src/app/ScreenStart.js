@@ -24,13 +24,13 @@ class ScreenStart extends React.Component {
         var self = this;
         var forms = this.state.forms;
         var firstform = this.state.forms[0];
-        firstform = <Form formname={firstform} number={0} changeState={this.changeState.bind(this)}/>
+        firstform = <Form formname={firstform} number={0} changeState={this.changeState.bind(this)} enterPressed={this.enterPressed.bind(this)}/>
         var otherforms = [];
         for(var i = 1; i < forms.length; i++) {
           otherforms.push(forms[i]);
         }
         otherforms = otherforms.map(function(item, key){
-          var form = <Form formname={item} key={key} number={key+1} changeState={self.changeState.bind(self)}/>
+          var form = <Form formname={item} key={key} number={key+1} changeState={self.changeState.bind(self)} enterPressed={self.enterPressed.bind(self)}/>
           return(
             form
           )
@@ -118,6 +118,16 @@ class ScreenStart extends React.Component {
       else {var message = "Er is iets fout gegaan, probeer het opnieuw";}
       ReactDOM.render(<Warning error={message}/>, document.getElementById("notenoughinformation"))
     }
+
+    enterPressed(event) {
+      var self = this;
+      self.retrieveData.bind(self);
+      var code = event.keyCode;
+      if(code === 13) {
+        self.retrieveData();
+      }
+    }
+
 }
 
 export default ScreenStart
