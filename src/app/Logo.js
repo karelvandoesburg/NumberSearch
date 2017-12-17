@@ -6,7 +6,7 @@ class Logo extends React.Component {
   constructor(props) {
     super();
     var com = ergatis;
-    if(props.company === "sitagre") {com = sitagre;}
+    if(props.company === "Sitagre") {com = sitagre;}
     this.state = {
       company: com
     }
@@ -15,7 +15,7 @@ class Logo extends React.Component {
   render() {
     return (
       <div>
-        <img id="ergatis" src={ergatis} />
+        <img id={this.props.company} src={this.state.company} />
       </div>
     )
   }

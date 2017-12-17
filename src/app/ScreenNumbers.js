@@ -10,7 +10,6 @@ class ScreenNumbers extends React.Component {
 
     return(
       <div className='container overal'>
-          <img src={logo} />
           {dataobject}
           <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
       </div>
@@ -18,7 +17,7 @@ class ScreenNumbers extends React.Component {
   }
 
   goBack() {
-    ReactDOM.render(<ScreenStart />,document.getElementById('wrapper'));
+    ReactDOM.render(<ScreenStart />,document.getElementById('context-container'));
   }
 }
 

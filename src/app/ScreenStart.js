@@ -34,9 +34,7 @@ class ScreenStart extends React.Component {
         }
         otherforms = otherforms.map(function(item, key){
           var form = <Form formname={item} key={key} number={key+1} changeState={self.changeState.bind(self)} enterPressed={self.enterPressed.bind(self)}/>
-          return(
-            form
-          )
+          return(form)
         })
         return (
             <div className='container overal'>
@@ -57,9 +55,7 @@ class ScreenStart extends React.Component {
     mapForms(data) {
       data.map(function(item, key){
         var form = <Form formname={item} key={key} number={key} changeState={self.changeState.bind(self)}/>
-        return(
-          form
-        )
+        return(form)
       })
     }
 
@@ -68,7 +64,6 @@ class ScreenStart extends React.Component {
       array[searchnumber]=value;
     }
 
-    /*
     retrieveData() {
       var api = '5fca7';
       var self = this;
@@ -84,9 +79,8 @@ class ScreenStart extends React.Component {
         alert(error);
       })
     }
-    */
 
-
+    /*
     retrieveData() {
       var self = this;
       axios.get('/api/phonesnew.json').then(function(response) {
@@ -95,6 +89,7 @@ class ScreenStart extends React.Component {
         alert(error);
       })
     }
+    */
 
     processDate(response) {
       if(this.checkError(response) == true) {
@@ -103,7 +98,7 @@ class ScreenStart extends React.Component {
       }
       else {
         ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"))
-        ReactDOM.render(<ScreenNumbers response={response}/>, document.getElementById('wrapper'));
+        ReactDOM.render(<ScreenNumbers response={response}/>, document.getElementById('context-container'));
       }
     }
 
@@ -132,12 +127,9 @@ class ScreenStart extends React.Component {
       }
     }
 
-    displayLogo() {
-      ReactDOM.render(<Logo company={this.state.company}/>,document.getElementById('wrapper'));
-    }
-
     changeCompany(company) {
       this.state.company = company;
+      ReactDOM.unmountComponentAtNode(document.getElementById("logo-container"));
       ReactDOM.render(<Logo company={this.state.company}/>,document.getElementById('logo-container'));
     }
 
