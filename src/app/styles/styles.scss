@@ -129,7 +129,7 @@ ul {
   font-size: 16px;
 }
 
-.inputbutton {
+#inputbutton {
   font-family:Fira-Sans;
   width:$containerwidth;
   padding-top:10px;
@@ -138,8 +138,15 @@ ul {
   color:white;
   position: absolute;
   bottom:0px;
-  background-color: $ergatisblue;
   cursor:pointer;
+}
+
+.Ergatis {
+  background-color: $ergatisblue;
+}
+
+.Sitagre {
+  background-color: $ergatisblack;
 }
 
 #backbutton {

@@ -123,7 +123,7 @@ ul {
   font-family: Fira-Sans-light;
   font-size: 16px; }
 
-.inputbutton {
+#inputbutton {
   font-family: Fira-Sans;
   width: 300px;
   padding-top: 10px;
@@ -132,8 +132,13 @@ ul {
   color: white;
   position: absolute;
   bottom: 0px;
-  background-color: #00a3d3;
   cursor: pointer; }
+
+.Ergatis {
+  background-color: #00a3d3; }
+
+.Sitagre {
+  background-color: #434d53; }
 
 #backbutton {
   background-color: #434d53; }

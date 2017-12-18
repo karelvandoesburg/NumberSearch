@@ -2,16 +2,10 @@ import React from 'react';
 
 class CompanyChoice extends React.Component {
 
-  constructor(props) {
-    super();
-    this.state = {
-      company : props.company
-    }
-  }
-
   render() {
+    var self = this;
     return (
-      <div className='inputbutton' onClick={this.props.retrieveData}>Zoek telefoonnummers</div>
+      <div id='inputbutton' className={this.props.company} onClick={this.props.retrieveData}>Zoek telefoonnummers</div>
     )
   }
 

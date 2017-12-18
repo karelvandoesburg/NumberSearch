@@ -7,6 +7,7 @@ import ScreenNumbers from './ScreenNumbers';
 import Warning from './Warning';
 import CompanyChoice from './CompanyChoice';
 import Logo from './Logo';
+import Button from './Button';
 
 class ScreenStart extends React.Component {
 
@@ -38,6 +39,7 @@ class ScreenStart extends React.Component {
         })
         return (
             <div className='container overal'>
+                <Button company={this.state.company} retrieveData={this.retrieveData.bind(this)} />
                 <div id='instruction'>Kies een bedrijf en vul het dossiernummer of de volledige naam van de client en zijn/haar geboortedatum in</div>
                 <CompanyChoice company={this.props.company}  changeCompany={this.changeCompany.bind(this)}/>
                 <div id='firstform'>{firstform}</div>
@@ -67,6 +69,7 @@ class ScreenStart extends React.Component {
       var api = '5fca7';
       var self = this;
       axios.post('/api', {
+        apiType: this.state.company,
         apiKey: api,
         clientLastName: this.state.inputdata[1],
         clientBirthDate: this.state.inputdata[2],
@@ -126,8 +129,9 @@ class ScreenStart extends React.Component {
       }
     }
 
-    changeCompany(company) {
-      this.state.company = company;
+    changeCompany(comp) {
+      this.setState({company:comp});
+      console.log(this.state.company);
       ReactDOM.unmountComponentAtNode(document.getElementById("logo-container"));
       ReactDOM.render(<Logo company={this.state.company}/>,document.getElementById('logo-container'));
     }
