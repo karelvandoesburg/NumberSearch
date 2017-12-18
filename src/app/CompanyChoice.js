@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Logo from './Logo';
 
 class CompanyChoice extends React.Component {
 
@@ -16,8 +14,8 @@ class CompanyChoice extends React.Component {
     return (
       <div id='company-form'>
         <form id='company-form'>
-          <input type="radio" name="company" value="Ergatis" onChange={this.changeCompany.bind(this)} checked/> Ergatis <br/>
-          <input type="radio" name="company" value="Sitagre" onChange={this.changeCompany.bind(this)}/> Sitagre
+          <input type="radio" name="company" value="Ergatis" onClick={this.changeCompany.bind(this)} defaultChecked/> Ergatis <br/>
+          <input type="radio" name="company" value="Sitagre" onClick={this.changeCompany.bind(this)}/> Sitagre
         </form>
       </div>
     )
