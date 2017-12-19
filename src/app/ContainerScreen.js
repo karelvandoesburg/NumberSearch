@@ -14,8 +14,9 @@ class ContainerScreen extends React.Component {
 
     constructor(props) {
         super();
+        var form = ['Dossiernummer', 'Cliënt achternaam', 'Cliënt geboortedatum (dd-mm-jjjj)']
         this.state = {
-            forms : ['Dossiernummer', 'Cliënt achternaam', 'Cliënt geboortedatum (dd-mm-jjjj)'],
+            forms : form,
             inputdata: [],
             company: props.company,
             warning:'',
@@ -23,10 +24,10 @@ class ContainerScreen extends React.Component {
         for(var i = 0; i < this.state.forms.length; i++) {
           this.state.inputdata.push('');
         }
+        this.state.context = <ScreenStart company={this.state.company} forms={this.state.forms} changeState={this.changeState.bind(this)} enterPressed={this.enterPressed.bind(this)} changeCompany={this.changeCompany.bind(this)}/>;
     }
 
     render() {
-      this.setState({context: <ScreenStart company={this.state.company} forms={this.state.forms} changeState={this.changeState.bind(this)} enterPressed={this.enterPressed.bind(this)} changeCompany={this.changeCompany.bind(this)}/>})
       return (
             <div className='container overal'>
                 <Logo company={this.state.company}/>
