@@ -19,6 +19,7 @@ class ContainerScreen extends React.Component {
             forms : form,
             inputdata: [],
             company: props.company,
+            button: props.company,
             warning:'',
         }
         for(var i = 0; i < this.state.forms.length; i++) {
@@ -31,7 +32,7 @@ class ContainerScreen extends React.Component {
       return (
             <div className='container overal'>
                 <Logo company={this.state.company}/>
-                <Button company={this.state.company} retrieveData={this.retrieveData.bind(this)} />
+                <Button button={this.state.button} retrieveData={this.retrieveData.bind(this)} Screen={this.state.Screen}/>
                 {this.state.context}
                 <Warning error={this.state.warning}/>
             </div>
@@ -84,8 +85,7 @@ class ContainerScreen extends React.Component {
         this.processError(response);
       }
       else {
-        ReactDOM.unmountComponentAtNode(document.getElementById("context-container"));
-        ReactDOM.render(<ScreenNumbers response={response} company={this.state.company}/>, document.getElementById('context-container'));
+        this.setState({button: "backbutton", context: <ScreenNumbers response={response} company={this.state.company}/>})
       }
     }
 
@@ -115,7 +115,7 @@ class ContainerScreen extends React.Component {
     }
 
     changeCompany(comp) {
-      this.setState({company:comp});
+      this.setState({company:comp, button:comp});
     }
 
 }

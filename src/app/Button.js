@@ -4,15 +4,12 @@ class CompanyChoice extends React.Component {
 
   constructor(props) {
     super();
-    this.state = {button: props.company, text:"Zoek telefoonnummers"}
-    if(props.backbutton == "true"){
-      this.state ={button:"backbutton", text:"Nieuwe zoekopdracht"};
-    }
+    this.state = {company: props.company, text:"Zoek telefoonnummers"}
   }
 
   render() {
     return (
-      <div id='inputbutton' className={this.props.company} onClick={this.props.retrieveData}>{this.state.text}</div>
+      <div id='inputbutton' className={this.props.button} onClick={this.props.retrieveData}>{this.state.text}</div>
     )
   }
 

@@ -11,9 +11,7 @@ class ScreenNumbers extends React.Component {
     var dataobject = <Number type={data.type} name={data.name} phone={data.phone}/>;
 
     return(
-      <div className='container overal'>
-        <Logo company={this.props.company}/>
-        <Button company="backbutton" backbutton="true" retrieveData={this.goBack}/>
+      <div>
         {dataobject}
       </div>
     )
