@@ -14,7 +14,7 @@ class ScreenStart extends React.Component {
     render() {
         var self = this;
         var forms = this.props.forms;
-        var firstform = <Form formname={firstform} number={0} changeState={this.props.changeState} enterPressed={this.props.enterPressed}/>
+        var firstform = <Form formname={forms[0]} number={0} changeState={this.props.changeState} enterPressed={this.props.enterPressed}/>
         var otherforms = [];
         for(var i = 1; i < forms.length; i++) {
           otherforms.push(forms[i]);
