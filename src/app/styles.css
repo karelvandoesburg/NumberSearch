@@ -80,8 +80,7 @@ ul {
   overflow: hidden; }
 
 .overal {
-  height: 424px;
-  background-color: red; }
+  height: 424px; }
 
 .context {
   margin-top: 10px;
@@ -151,6 +150,9 @@ ul {
 .Sitagre {
   background-color: #941b80; }
 
+.backbutton {
+  background-color: #434d53; }
+
 #backbutton {
   background-color: #434d53; }
 
@@ -159,7 +161,7 @@ ul {
   text-align: left;
   width: 100%;
   height: auto;
-  margin-top: 125px; }
+  margin-top: 95px; }
   .number li {
     margin-top: 5px;
     white-space: nowrap;

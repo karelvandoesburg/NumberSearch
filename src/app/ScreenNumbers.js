@@ -13,14 +13,14 @@ class ScreenNumbers extends React.Component {
     return(
       <div className='container overal'>
         <Logo company={this.props.company}/>
-        <Button company={this.props.company} />
+        <Button company="backbutton" backbutton="true" retrieveData={this.goBack}/>
         {dataobject}
       </div>
     )
   }
 
   goBack() {
-    ReactDOM.render(<ScreenStart />,document.getElementById('context-container'));
+    ReactDOM.render(<ScreenStart company="Ergatis"/>,document.getElementById('context-container'));
   }
 }
 
