@@ -81,11 +81,15 @@ class ContainerScreen extends React.Component {
     }
 
     processData(response) {
-      if(this.checkError(response) == true) {
+      if(this.checkError(response) == false) {
         this.processError(response);
       }
       else {
-        this.setState({button: "backbutton", context: <ScreenNumbers response={response} company={this.state.company}/>})
+        this.setState({
+          button: "backbutton",
+          context: <ScreenNumbers response={response} company={this.state.company}/>,
+          warning: ""
+        })
       }
     }
 
