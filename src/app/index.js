@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScreenStart from './ScreenStart';
-import Logo from './Logo';
-import Button from './Button';
+import ContainerScreen from './ContainerScreen';
 
-ReactDOM.render(<ScreenStart company="Ergatis"/>,document.getElementById('context-container'));
+ReactDOM.render(<ContainerScreen company="Ergatis"/>,document.getElementById('context-container'));
