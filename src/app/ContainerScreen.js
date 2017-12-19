@@ -32,7 +32,7 @@ class ContainerScreen extends React.Component {
       return (
             <div className='container overal'>
                 <Logo company={this.state.company}/>
-                <Button button={this.state.button} retrieveData={this.retrieveData.bind(this)} Screen={this.state.Screen}/>
+                <Button button={this.state.button} retrieveData={this.retrieveData.bind(this)} goBack={this.goBack.bind(this)}/>
                 {this.state.context}
                 <Warning error={this.state.warning}/>
             </div>
@@ -116,6 +116,14 @@ class ContainerScreen extends React.Component {
 
     changeCompany(comp) {
       this.setState({company:comp, button:comp});
+    }
+
+    goBack() {
+      this.setState({
+        context: <ScreenStart company={this.state.company} forms={this.state.forms} changeState={this.changeState.bind(this)} enterPressed={this.enterPressed.bind(this)} changeCompany={this.changeCompany.bind(this)}/>,
+        button: "Ergatis",
+        company: "Ergatis"
+      });
     }
 
 }
