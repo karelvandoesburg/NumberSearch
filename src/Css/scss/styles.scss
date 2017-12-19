@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'fonts.scss';
 
 *{
     margin:0px auto;
@@ -79,7 +78,9 @@ ul {
 }
 
 .container {
-  font-family:Fira-Sans-Light;
+  // font-family:Fira-Sans-Light;
+  font-family:"Fira Sans", sans-serif;
+  font-weight:300;
   font-size:16px;
   color:$ergatisblack;
   width:$containerwidth;
@@ -97,7 +98,8 @@ ul {
 
 #Warning {
   position: absolute;
-  font-family:Fira-Sans;
+  font-family:"Fira Sans", sans-serif;
+  font-weight:500;
   font-size:18px;
   color:$ergatisblack;
   width:$containerwidth;
@@ -135,12 +137,14 @@ ul {
   height: 32px;
 	padding: 0 10px;
 	line-height: 32px;
-  font-family: Fira-Sans-light;
+  font-family:"Fira Sans", sans-serif;
+  font-weight:300;
   font-size: 16px;
 }
 
 #inputbutton {
-  font-family:Fira-Sans;
+  font-family:"Fira Sans", sans-serif;
+  font-weight:500;
   width:$containerwidth;
   padding-top:10px;
   text-align: center;

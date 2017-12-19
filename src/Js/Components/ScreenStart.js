@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import logo from './images/ergatislogo.png';
 import axios from 'axios';
 import Form from './Form';
 import ScreenNumbers from './ScreenNumbers';
