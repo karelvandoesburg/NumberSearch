@@ -64,6 +64,7 @@ class ScreenStart extends React.Component {
     changeState(value,searchnumber) {
       var array = this.state.inputdata;
       array[searchnumber]=value;
+      this.setState({inputdata:array});
     }
 
     /*
@@ -113,12 +114,14 @@ class ScreenStart extends React.Component {
 
     processError(response) {
       var err = response.error;
-      var message='';
-      if(err == "Access denied") {message = "U heeft geen toegang tot de server";}
-      else if(err == "Specify all details") {message = "Vul alstublieft meer informatie in";}
-      else if(err == "No results found") {message = "Er zijn geen resultaten gevonden";}
-      else if(err == "Assistant unavailable") {message = "De Trajectassistent is momenteel niet bereikbaar"}
-      else {var message = "Er is iets fout gegaan, probeer het opnieuw";}
+      var message;
+      switch(err) {
+        case "Access denied": message = "U heeft geen toegang tot de server";
+        case "Specify all details": message = "Vul alstublieft meer informatie in";
+        case "No results found": message = "Er zijn geen resultaten gevonden";
+        case "Assistant unavailable": message = "De Trajectassistent is momenteel niet bereikbaar";
+        default: message="Er is iets fout gegaan, probeer het opnieuw";
+      }
       ReactDOM.render(<Warning error={message}/>, document.getElementById("notenoughinformation"))
     }
 
@@ -126,9 +129,7 @@ class ScreenStart extends React.Component {
       var self = this;
       self.retrieveData.bind(self);
       var code = event.keyCode;
-      if(code === 13) {
-        self.retrieveData();
-      }
+      if(code === 13) {self.retrieveData();}
     }
 
     changeCompany(comp) {
