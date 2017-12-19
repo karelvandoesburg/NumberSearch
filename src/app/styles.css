@@ -86,7 +86,7 @@ ul {
   margin-top: 10px;
   height: auto; }
 
-#notenoughinformation {
+#Warning {
   position: absolute;
   font-family: Fira-Sans;
   font-size: 18px;
@@ -97,9 +97,7 @@ ul {
   left: 50%;
   margin-top: 269.5px;
   margin-left: -150px;
-  text-align: center; }
-
-#Warning {
+  text-align: center;
   opacity: 1;
   -webkit-animation: fadein 0.2s ease-in;
   -moz-animation: fadein 0.2s ease-in;

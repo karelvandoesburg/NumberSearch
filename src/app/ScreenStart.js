@@ -16,7 +16,8 @@ class ScreenStart extends React.Component {
         this.state = {
             forms : ['Dossiernummer', 'Cliënt achternaam', 'Cliënt geboortedatum (dd-mm-jjjj)'],
             inputdata: [],
-            company: props.company
+            company: props.company,
+            warning:''
         }
         for(var i = 0; i < this.state.forms.length; i++) {
           this.state.inputdata.push('');
@@ -50,6 +51,7 @@ class ScreenStart extends React.Component {
                 <div className='container context'>
                   <ul>{otherforms}</ul>
                 </div>
+                <Warning error={this.state.warning}/>
             </div>
         )
     }
@@ -97,11 +99,9 @@ class ScreenStart extends React.Component {
 
     processData(response) {
       if(this.checkError(response) == true) {
-        ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"))
         this.processError(response);
       }
       else {
-        ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"));
         ReactDOM.unmountComponentAtNode(document.getElementById("context-container"));
         ReactDOM.render(<ScreenNumbers response={response} company={this.state.company}/>, document.getElementById('context-container'));
       }
@@ -122,7 +122,7 @@ class ScreenStart extends React.Component {
         case "Assistant unavailable": message = "De Trajectassistent is momenteel niet bereikbaar";
         default: message="Er is iets fout gegaan, probeer het opnieuw";
       }
-      ReactDOM.render(<Warning error={message}/>, document.getElementById("notenoughinformation"))
+      this.setState({warning:message});
     }
 
     enterPressed(event) {

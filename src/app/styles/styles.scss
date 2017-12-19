@@ -95,7 +95,7 @@ ul {
   height: auto;
 }
 
-#notenoughinformation {
+#Warning {
   position: absolute;
   font-family:Fira-Sans;
   font-size:18px;
@@ -107,9 +107,6 @@ ul {
   margin-top:(($containerheight/2)+30px);
   margin-left:-($containerwidth/2);
   text-align:center;
-}
-
-#Warning {
   $time : 0.2;
   opacity: 1;
   -webkit-animation: fadein $time+s ease-in;
