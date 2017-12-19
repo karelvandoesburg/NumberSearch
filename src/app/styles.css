@@ -8,7 +8,8 @@
 
 * {
   margin: 0px auto;
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 ul {
   padding: 0; }
@@ -22,13 +23,22 @@ ul {
   margin-left: -150px; }
 
 #Ergatis {
+  margin-bottom: 30px;
+  background-image: url("images/ergatislogo.png");
+  background-repeat: no-repeat;
   height: 75px;
-  width: 240px; }
+  width: 240px;
+  float: left;
+  padding-right: 60px; }
 
 #Sitagre {
-  height: 82px;
-  width: 264px;
-  margin-bottom: -7px; }
+  background-image: url("images/sitagre.svg");
+  background-repeat: no-repeat;
+  float: left;
+  padding-right: 48px;
+  height: 79px;
+  width: 252px;
+  margin-bottom: 26px; }
 
 #line {
   width: 300px;
@@ -70,7 +80,8 @@ ul {
   overflow: hidden; }
 
 .overal {
-  height: 404px; }
+  height: 424px;
+  background-color: red; }
 
 .context {
   margin-top: 10px;
@@ -138,7 +149,7 @@ ul {
   background-color: #00a3d3; }
 
 .Sitagre {
-  background-color: #434d53; }
+  background-color: #941b80; }
 
 #backbutton {
   background-color: #434d53; }

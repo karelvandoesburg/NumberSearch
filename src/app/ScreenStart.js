@@ -39,6 +39,7 @@ class ScreenStart extends React.Component {
         })
         return (
             <div className='container overal'>
+                <Logo company={this.state.company}/>
                 <Button company={this.state.company} retrieveData={this.retrieveData.bind(this)} />
                 <div id='instruction'>Kies een bedrijf en vul het dossiernummer of de volledige naam van de client en zijn/haar geboortedatum in</div>
                 <CompanyChoice company={this.props.company}  changeCompany={this.changeCompany.bind(this)}/>
@@ -65,6 +66,7 @@ class ScreenStart extends React.Component {
       array[searchnumber]=value;
     }
 
+    /*
     retrieveData() {
       var api = '5fca7';
       var self = this;
@@ -81,26 +83,26 @@ class ScreenStart extends React.Component {
         alert(error);
       })
     }
+    */
 
-    /*
     retrieveData() {
       var self = this;
       axios.get('/api/phonesnew.json').then(function(response) {
-        self.processDate(response.data);
+        self.processData(response.data);
       }).catch(function(error){
         alert(error);
       })
     }
-    */
 
-    processDate(response) {
+    processData(response) {
       if(this.checkError(response) == true) {
         ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"))
         this.processError(response);
       }
       else {
-        ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"))
-        ReactDOM.render(<ScreenNumbers response={response}/>, document.getElementById('context-container'));
+        ReactDOM.unmountComponentAtNode(document.getElementById("notenoughinformation"));
+        ReactDOM.unmountComponentAtNode(document.getElementById("context-container"));
+        ReactDOM.render(<ScreenNumbers response={response} company={this.state.company}/>, document.getElementById('context-container'));
       }
     }
 
@@ -131,9 +133,6 @@ class ScreenStart extends React.Component {
 
     changeCompany(comp) {
       this.setState({company:comp});
-      console.log(this.state.company);
-      ReactDOM.unmountComponentAtNode(document.getElementById("logo-container"));
-      ReactDOM.render(<Logo company={this.state.company}/>,document.getElementById('logo-container'));
     }
 
 }

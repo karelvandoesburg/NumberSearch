@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Number from './Number';
+import Logo from './Logo';
+import Button from './Button';
 import ScreenStart from './ScreenStart';
 
 class ScreenNumbers extends React.Component {
@@ -10,8 +12,9 @@ class ScreenNumbers extends React.Component {
 
     return(
       <div className='container overal'>
-          {dataobject}
-          <div className='inputbutton' id='backbutton' onClick={this.goBack}>Nieuwe Zoekopdracht</div>
+        <Logo company={this.props.company}/>
+        <Button company={this.props.company} />
+        {dataobject}
       </div>
     )
   }
