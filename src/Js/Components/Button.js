@@ -2,16 +2,12 @@ import React from 'react';
 
 class CompanyChoice extends React.Component {
 
-  constructor() {
-    super();
-    this.state = {text:''}
-  }
-
   render() {
-    if(this.props.button == "backbutton") {this.state.text = "Nieuwe zoekopdracht";}
-    else {this.state.text = "Zoek telefoonnummers";}
+    var text;
+    if(this.props.button == "backbutton") {text = "Nieuwe zoekopdracht";}
+    else {text = "Zoek telefoonnummers";}
     return (
-      <div id='inputbutton' className={this.props.button} onClick={this.fireButton.bind(this)}>{this.state.text}</div>
+      <div id='inputbutton' className={this.props.button} onClick={this.fireButton.bind(this)}>{text}</div>
     )
   }
 

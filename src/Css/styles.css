@@ -10,8 +10,8 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 479px;
-  margin-top: -239.5px;
+  height: 460px;
+  margin-top: -230px;
   margin-left: -150px; }
 
 #Ergatis {
@@ -52,7 +52,7 @@ ul {
   text-align: center; }
 
 #firstform {
-  margin-top: 15px; }
+  margin-top: 20px; }
 
 #instruction {
   margin-top: 30px;
@@ -60,9 +60,16 @@ ul {
   height: auto; }
 
 #company-form {
-  margin-top: 10px; }
+  margin-top: 15px; }
   #company-form input {
-    margin-top: 5px; }
+    cursor: pointer; }
+  #company-form label {
+    cursor: pointer; }
+
+.input-container {
+  height: 20px;
+  width: 135px;
+  display: inline-block; }
 
 .container {
   font-family: "Fira Sans", sans-serif;
@@ -73,7 +80,7 @@ ul {
   overflow: hidden; }
 
 .overal {
-  height: 424px; }
+  height: 405px; }
 
 .context {
   margin-top: 10px;
@@ -89,7 +96,7 @@ ul {
   height: 30px;
   top: 50%;
   left: 50%;
-  margin-top: 269.5px;
+  margin-top: 260px;
   margin-left: -150px;
   text-align: center; }
 
@@ -157,7 +164,7 @@ ul {
   text-align: left;
   width: 100%;
   height: auto;
-  margin-top: 95px; }
+  margin-top: 81px; }
   .number li {
     margin-top: 5px;
     white-space: nowrap;
@@ -171,6 +178,8 @@ ul {
     border-color: darkgrey; }
 
 #trajectassistent-header {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
   width: auto;
   height: 25px;
   margin-bottom: 10px;

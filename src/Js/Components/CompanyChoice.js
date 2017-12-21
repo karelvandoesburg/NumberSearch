@@ -12,10 +12,16 @@ class CompanyChoice extends React.Component {
   render() {
     var self = this;
     return (
-      <div id='company-form'>
+      <div>
         <form id='company-form'>
-          <input type="radio" name="company" value="Ergatis" onClick={this.changeCompany.bind(this)} defaultChecked/> Ergatis <br/>
-          <input type="radio" name="company" value="Sitagre" onClick={this.changeCompany.bind(this)}/> Sitagre
+          <div className='input-container'>
+            <input type="radio" name="company" value="Ergatis" onClick={this.changeCompany.bind(this)}  id="radioCompanyErgatis" defaultChecked/>
+            <label htmlFor="radioCompanyErgatis"> Ergatis </label><br/>
+          </div>
+          <div className='input-container'>
+            <input type="radio" name="company" value="Sitagre" onClick={this.changeCompany.bind(this)} id="radioCompanySitagre"/>
+            <label htmlFor="radioCompanySitagre"> Sitagre </label>
+          </div>
         </form>
       </div>
     )

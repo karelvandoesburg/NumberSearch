@@ -20,6 +20,7 @@ class ContainerScreen extends React.Component {
             company: props.company,
             button: props.company,
             warning:'',
+            warninganimation:"warninghidden"
         }
         for(var i = 0; i < this.state.forms.length; i++) {
           this.state.inputdata.push('');
@@ -33,7 +34,7 @@ class ContainerScreen extends React.Component {
                 <Logo company={this.state.company}/>
                 <Button button={this.state.button} retrieveData={this.retrieveData.bind(this)} goBack={this.goBack.bind(this)}/>
                 {this.state.context}
-                <Warning error={this.state.warning}/>
+                <Warning animation={this.state.warninganimation} error={this.state.warning}/>
             </div>
         )
     }
@@ -51,7 +52,6 @@ class ContainerScreen extends React.Component {
       this.setState({inputdata:array});
     }
 
-    /*
     retrieveData() {
       var api = '5fca7';
       var self = this;
@@ -68,16 +68,19 @@ class ContainerScreen extends React.Component {
         alert(error);
       })
     }
-    */
 
+    /*
     retrieveData() {
-      var self = this;
-      axios.get('/api/phonesnew.json').then(function(response) {
-        self.processData(response.data);
-      }).catch(function(error){
-        alert(error);
-      })
+      this.setState({warninganimation:"warninghidden"}, function() {
+        var self = this;
+        axios.get('/api/phonesnew.json').then(function(response) {
+          self.processData(response.data);
+        }).catch(function(error){
+          alert(error);
+        })
+      });
     }
+    */
 
     processData(response) {
       if(this.checkError(response) == true) {
@@ -107,7 +110,7 @@ class ContainerScreen extends React.Component {
         case "Assistant unavailable": message = "De Trajectassistent is momenteel niet bereikbaar";
         default: message="Er is iets fout gegaan, probeer het opnieuw";
       }
-      this.setState({warning:message});
+      this.setState({warning:message, warninganimation:"warninganimation"});
     }
 
     enterPressed(event) {
